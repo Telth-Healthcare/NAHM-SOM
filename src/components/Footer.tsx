@@ -9,7 +9,8 @@ import {
   Download,
   Linkedin,
   Twitter,
-  Facebook
+  Facebook,
+  Home
 } from "lucide-react";
 
 const Footer = () => {
@@ -33,8 +34,9 @@ const Footer = () => {
     {
       name: "Ameri India Trust",
       role: "Programme Promoter",
-      email: "info@ameriindiatrust.org",
-      phone: "+91 11 4567 8900"
+      email: "contact@nahm-som.org",
+      phone: "+91 82877 77505",
+      address: "The chambers Vardhaman Trade Center, 3rd Floor, Nehru Place, New Delhi  110019"
     },
   ];
 
@@ -121,6 +123,10 @@ const Footer = () => {
                       <div className="flex items-center text-sm text-white/70">
                         <Phone className="h-4 w-4 mr-2 text-teal-400" />
                         {org.phone}
+                      </div>
+                       <div className="flex items-center text-sm text-white/70">
+                        <Home className="h-10 w-10 mr-2 text-teal-400" />
+                        {org.address}
                       </div>
                     </div>
                   </div>
