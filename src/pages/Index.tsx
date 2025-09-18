@@ -4,6 +4,7 @@ import React, { Suspense, lazy } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
+import Empty from "@/components/empty";
 
 // Lazy load = non-critical components
 const About = lazy(() => import("@/components/About"));
@@ -30,6 +31,11 @@ const Index = () => {
       <main>
         <Hero />
 
+        <Suspense fallback={<div className="h-40 flex items-center justify-center">Loading Centers...</div>}>
+          <Empty />
+        </Suspense>
+
+{/*         
         <Suspense fallback={<div className="h-40 flex items-center justify-center">Loading Centers...</div>}>
           <Centers />
         </Suspense>
@@ -64,7 +70,7 @@ const Index = () => {
 
         <Suspense fallback={<div className="h-40 flex items-center justify-center">Loading About...</div>}>
           <About />
-        </Suspense>
+        </Suspense> */}
       </main>
 
       <Footer />

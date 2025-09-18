@@ -6,7 +6,7 @@ const Schema = () => {
     "alternateName": "NAHM-SOM",
     "description": "Transforming healthcare in India through AI-powered wellness centers in temples and communities, blending precision medicine with soul-oriented care.",
     "url": "/",
-    "logo": "/favicon.ico",
+    // "logo": "/favicon.ico",
     "foundingDate": "2024",
     "founders": [
       {
