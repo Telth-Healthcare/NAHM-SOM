@@ -1,0 +1,48 @@
+/* Background Gradient Animation */
+.bg-gradient-hero {
+  background: linear-gradient(120deg, rgba(0,0,0,0.7), rgba(20,20,20,0.5));
+  animation: gradient-move 12s ease infinite alternate;
+}
+@keyframes gradient-move {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Slow Zoom for Background Image */
+.hero-img-zoom {
+  animation: zoom-in 20s ease-in-out infinite alternate;
+}
+@keyframes zoom-in {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
+/* Gradient Text Animation */
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 6s ease infinite;
+}
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Fade In Delay */
+.animate-fade-in-delay {
+  animation: fade-in 1.5s ease forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Scroll Indicator Pulse */
+.scroll-dot {
+  animation: scroll-pulse 1.5s infinite;
+}
+@keyframes scroll-pulse {
+  0%, 100% { opacity: 0.3; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(6px); }
+}
