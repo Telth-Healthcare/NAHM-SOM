@@ -16,7 +16,7 @@ const Schema = lazy(() => import("@/components/Schema"));
 const Governance = lazy(() => import("@/components/Governance"));
 const CareToHome = lazy(() => import("@/components/CareToHome"));
 const CareToCommunity = lazy(() => import("@/components/CareToCommunity"));
-const Empty = lazy(() => import("@/components/empty"));
+const Empty = lazy(() => import("@/components/Empty"));
 
 const Index = () => {
   return (
