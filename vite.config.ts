@@ -5,8 +5,9 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // ✅ Use "/" locally, "/NAHM-SOM/" only when building for GitHub Pages
-  base: mode === "production" ? "/NAHM-SOM/" : "/",
+  // ✅ Use "/" locally, "/NAHM-SOM/" only when building for GitHub Pages\
+  base:'/',
+  // base: mode === "production" ? "/NAHM-SOM/" : "/",
   server: {
     host: "::",
     port: 8080,
