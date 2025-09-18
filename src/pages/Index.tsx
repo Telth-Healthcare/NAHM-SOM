@@ -4,7 +4,6 @@ import React, { Suspense, lazy } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
-import Empty from "@/components/empty";
 
 // Lazy load = non-critical components
 const About = lazy(() => import("@/components/About"));
@@ -17,6 +16,7 @@ const Schema = lazy(() => import("@/components/Schema"));
 const Governance = lazy(() => import("@/components/Governance"));
 const CareToHome = lazy(() => import("@/components/CareToHome"));
 const CareToCommunity = lazy(() => import("@/components/CareToCommunity"));
+const Empty = lazy(() => import("@/components/empty"));
 
 const Index = () => {
   return (
