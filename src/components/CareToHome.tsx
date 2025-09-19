@@ -35,7 +35,7 @@ const CareToHome = () => {
       <div className="container mx-auto px-4 lg:px-6 relative z-10 text-center">
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-bold text-black mb-2">
-          Care to Home
+          Care At Home
         </h2>
         <p className="text-2xl text-gray-700 mb-6 font-medium">
           Healthcare that comes to you.

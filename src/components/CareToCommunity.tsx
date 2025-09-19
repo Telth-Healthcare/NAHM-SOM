@@ -29,7 +29,7 @@ const CareToCommunity = () => {
             <div className="container mx-auto px-4 lg:px-6 relative z-10 text-center">
                 {/* Header */}
                 <h2 className="text-4xl md:text-5xl font-bold text-black mb-2">
-                    Care to Community
+                    Care At Community
                 </h2>
                 <p className="text-2xl text-gray-700 mb-6 font-medium">
                     Portable Smart Health in a Suitcase
