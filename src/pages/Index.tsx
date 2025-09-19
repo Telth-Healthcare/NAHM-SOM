@@ -31,11 +31,11 @@ const Index = () => {
       <main>
         <Hero />
 
-        <Suspense fallback={<div className="h-40 flex items-center justify-center">Loading Centers...</div>}>
+        {/* <Suspense fallback={<div className="h-40 flex items-center justify-center">Loading Centers...</div>}>
           <Empty />
-        </Suspense>
+        </Suspense> */}
 
-{/*         
+        
         <Suspense fallback={<div className="h-40 flex items-center justify-center">Loading Centers...</div>}>
           <Centers />
         </Suspense>
@@ -70,7 +70,7 @@ const Index = () => {
 
         <Suspense fallback={<div className="h-40 flex items-center justify-center">Loading About...</div>}>
           <About />
-        </Suspense> */}
+        </Suspense>
       </main>
 
       <Footer />
