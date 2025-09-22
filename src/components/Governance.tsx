@@ -153,65 +153,53 @@ const Governance = () => {
           </div>
 
           {/* Organizational Structure - Modern Design */}
-          <div className="bg-gray/80 backdrop-blur-sm rounded-3xl shadow-2xl p-8 lg:p-12 border border-gray-100">
+          <div className="bg-white/70 backdrop-blur-sm rounded-3xl shadow-xl p-8 lg:p-12 border border-gray-200">
             <div className="text-center mb-12">
-              <h3 className="text-3xl font-bold text-black mb-4">Organizational Structure</h3>
-              <p className="text-black max-w-2xl mx-auto">Our hierarchical framework ensures clear accountability and efficient decision-making across all levels</p>
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">Organizational Structure</h3>
+              <p className="text-gray-800 max-w-2xl mx-auto">
+                Our hierarchical framework ensures clear accountability and efficient decision-making across all levels
+              </p>
             </div>
 
             <div className="relative">
               {/* Vertical Connection Line */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500 to-teal-500 rounded-full z-0 hidden lg:block"></div>
+              <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-200 to-teal-200 rounded-full z-0 hidden lg:block"></div>
 
+              {/* Root - NAHM-SOM */}
               <div className="flex flex-col items-center gap-6 mb-12 relative z-10">
-                <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-5 rounded-2xl shadow-lg w-full max-w-md transform transition-all duration-500 hover:-translate-y-1 hover:shadow-xl">
-
-                  {/* Row with icon left + content right */}
+                <div className="bg-gradient-to-r from-blue-100 to-blue-200 text-gray-900 px-8 py-5 rounded-2xl shadow-md w-full max-w-md transform transition-all duration-500 hover:-translate-y-1 hover:shadow-lg">
                   <div className="flex items-center justify-center pr-8">
-                    {/* Icon */}
-                    <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mr-4">
-                      <ChevronDown className="w-6 h-6 text-white" />
+                    <div className="w-12 h-12 bg-white/30 rounded-xl flex items-center justify-center mr-4">
+                      <ChevronDown className="w-6 h-6 text-blue-600" />
                     </div>
-
-                    {/* Text content */}
-                    <div className='text-left'>
+                    <div className="text-left">
                       <h4 className="text-xl font-bold mb-1">NAHM-SOM</h4>
-                      {/* <p className="text-sm opacity-90">Strategic Oversight, Policy & Program Promoter</p> */}
                     </div>
                   </div>
-
                 </div>
               </div>
 
-
               {/* Level 1 - National Committee */}
               <div className="flex flex-col items-center gap-6 mb-12 relative z-10">
-                <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-5 rounded-2xl shadow-lg w-full max-w-md transform transition-all duration-500 hover:-translate-y-1 hover:shadow-xl">
-
-                  {/* Row with icon left + content right */}
+                <div className="bg-gradient-to-r from-blue-200 to-blue-300 text-gray-900 px-8 py-5 rounded-2xl shadow-md w-full max-w-md transform transition-all duration-500 hover:-translate-y-1 hover:shadow-lg">
                   <div className="flex items-center">
-                    {/* Icon */}
-                    <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mr-4">
-                      <ChevronDown className="w-6 h-6 text-white" />
+                    <div className="w-12 h-12 bg-white/30 rounded-xl flex items-center justify-center mr-4">
+                      <ChevronDown className="w-6 h-6 text-blue-700" />
                     </div>
-
-                    {/* Text content */}
                     <div>
                       <h4 className="text-xl font-bold mb-1">National Committee</h4>
                       <p className="text-sm opacity-90">Strategic Oversight, Policy & Program Promoter</p>
                     </div>
                   </div>
-
                 </div>
               </div>
 
-
               {/* Level 2 - Partners */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12 relative z-10">
-                <div className="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-6 rounded-2xl shadow-lg transform transition-all duration-500 hover:-translate-y-1 hover:shadow-xl">
+                <div className="bg-gradient-to-r from-blue-50 to-blue-100 text-gray-900 p-6 rounded-2xl shadow-md transform transition-all duration-500 hover:-translate-y-1 hover:shadow-lg">
                   <div className="flex items-center">
                     <div className="w-12 h-15 flex items-center justify-center mr-4">
-                      <img src={ameriLogo} alt='amerilogo' className="w-fit h-fit" />
+                      <img src={ameriLogo} alt="amerilogo" className="w-fit h-fit" />
                     </div>
                     <div>
                       <h4 className="text-lg font-bold">Ameri India Trust</h4>
@@ -219,10 +207,11 @@ const Governance = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-gradient-to-r from-purple-500 to-purple-600 text-white p-6 rounded-2xl shadow-lg transform transition-all duration-500 hover:-translate-y-1 hover:shadow-xl">
+
+                <div className="bg-gradient-to-r from-purple-50 to-purple-100 text-gray-900 p-6 rounded-2xl shadow-md transform transition-all duration-500 hover:-translate-y-1 hover:shadow-lg">
                   <div className="flex items-center">
-                    <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mr-4">
-                      <img src={logoTelth} alt='logo' className="w-7 h-7 fill-white" />
+                    <div className="w-12 h-12 bg-white/30 rounded-xl flex items-center justify-center mr-4">
+                      <img src={logoTelth} alt="logo" className="w-7 h-7" />
                     </div>
                     <div>
                       <h4 className="text-lg font-bold">CSR & Partner</h4>
@@ -230,20 +219,19 @@ const Governance = () => {
                     </div>
                   </div>
                 </div>
+
                 <div className="flex justify-center col-span-2 lg:hidden">
-                  <ChevronDown className="w-6 h-6 text-blue-500" />
+                  <ChevronDown className="w-6 h-6 text-blue-300" />
                 </div>
               </div>
 
               {/* Level 3 - Local Committees */}
               <div className="flex flex-col items-center mb-12 relative z-10">
-                <div className="bg-gradient-to-r from-teal-600 to-green-600 text-white px-8 py-5 rounded-2xl shadow-lg w-full max-w-md transform transition-all duration-500 hover:-translate-y-1 hover:shadow-xl">
+                <div className="bg-gradient-to-r from-teal-100 to-green-100 text-gray-900 px-8 py-5 rounded-2xl shadow-md w-full max-w-md transform transition-all duration-500 hover:-translate-y-1 hover:shadow-lg">
                   <div className="flex items-center justify-center space-x-4">
-                    {/* Icon */}
-                    <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
-                      <ChevronDown className="w-6 h-6 text-white" />
+                    <div className="w-12 h-12 bg-white/30 rounded-xl flex items-center justify-center">
+                      <ChevronDown className="w-6 h-6 text-teal-600" />
                     </div>
-                    {/* Text */}
                     <div className="text-left">
                       <h4 className="text-xl font-bold mb-1">Local Committees</h4>
                       <p className="text-sm opacity-90">Operation</p>
@@ -254,35 +242,34 @@ const Governance = () => {
 
               {/* Level 4 - Operational Teams */}
               <div className="grid grid-cols-1 md:grid-cols-3 mb-12 gap-6 relative z-10">
-                <div className="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white p-6 rounded-2xl shadow-lg transform transition-all duration-500 hover:-translate-y-1 hover:shadow-xl">
+                <div className="bg-gradient-to-r from-emerald-100 to-emerald-200 text-gray-900 p-6 rounded-2xl shadow-md transform transition-all duration-500 hover:-translate-y-1 hover:shadow-lg">
                   <Award className="w-8 h-8 mx-auto mb-3" />
                   <h4 className="font-bold text-center">Health & Wealth Community Leaders</h4>
                 </div>
-                <div className="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-6 rounded-2xl shadow-lg transform transition-all duration-500 hover:-translate-y-1 hover:shadow-xl">
+                <div className="bg-gradient-to-r from-blue-50 to-blue-100 text-gray-900 p-6 rounded-2xl shadow-md transform transition-all duration-500 hover:-translate-y-1 hover:shadow-lg">
                   <Users className="w-8 h-8 mx-auto mb-3" />
                   <h4 className="font-bold text-center">Community Care Managers</h4>
                 </div>
-                <div className="bg-gradient-to-r from-amber-500 to-amber-600 text-white p-6 rounded-2xl shadow-lg transform transition-all duration-500 hover:-translate-y-1 hover:shadow-xl">
+                <div className="bg-gradient-to-r from-amber-100 to-amber-200 text-gray-900 p-6 rounded-2xl shadow-md transform transition-all duration-500 hover:-translate-y-1 hover:shadow-lg">
                   <DollarSign className="w-8 h-8 mx-auto mb-3" />
                   <h4 className="font-bold text-center">Funding Manager</h4>
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
-                <div className="bg-gradient-to-r from-pink-500 to-pink-600 text-white p-6 rounded-2xl shadow-lg transform transition-all duration-500 hover:-translate-y-1 hover:shadow-xl">
+                <div className="bg-gradient-to-r from-pink-100 to-pink-200 text-gray-900 p-6 rounded-2xl shadow-md transform transition-all duration-500 hover:-translate-y-1 hover:shadow-lg">
                   <Stethoscope className="w-8 h-8 mx-auto mb-3" />
                   <h4 className="font-bold text-center">Nurse</h4>
                 </div>
-                <div className="bg-gradient-to-r from-indigo-500 to-indigo-600 text-white p-6 rounded-2xl shadow-lg transform transition-all duration-500 hover:-translate-y-1 hover:shadow-xl">
+                <div className="bg-gradient-to-r from-indigo-100 to-indigo-200 text-gray-900 p-6 rounded-2xl shadow-md transform transition-all duration-500 hover:-translate-y-1 hover:shadow-lg">
                   <HeartPulse className="w-8 h-8 mx-auto mb-3" />
                   <h4 className="font-bold text-center">Physician</h4>
                 </div>
-                <div className="bg-gradient-to-r from-teal-500 to-teal-600 text-white p-6 rounded-2xl shadow-lg transform transition-all duration-500 hover:-translate-y-1 hover:shadow-xl">
+                <div className="bg-gradient-to-r from-teal-100 to-teal-200 text-gray-900 p-6 rounded-2xl shadow-md transform transition-all duration-500 hover:-translate-y-1 hover:shadow-lg">
                   <Handshake className="w-8 h-8 mx-auto mb-3" />
                   <h4 className="font-bold text-center">Volunteers</h4>
                 </div>
               </div>
-
             </div>
           </div>
 

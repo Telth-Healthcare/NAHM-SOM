@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-
+import logo from '../assets/logonahmsom.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,11 +25,11 @@ const Header = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <HashLink smooth to="/#" className="flex items-center space-x-2 cursor-pointer">
-            <div className=" rounded-lg p-2">
-              <div className="w-8 h-8 bg-red-100 bg-card rounded flex items-center justify-center">
-                <span className="text-red-900 font-bold text-sm">N</span>
-              </div>
-            </div>
+            <img
+              src={logo}
+              alt="logo"
+              className="w-11 h-11"
+            />
             <div className="hidden sm:block">
               <h1 className="text-xl font-bold text-foreground">NAHM-SOM</h1>
               <p className="text-xs text-muted-foreground">AI Health Mission</p>

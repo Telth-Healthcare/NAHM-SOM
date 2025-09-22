@@ -9,6 +9,8 @@ import {
   Award,
   CheckCircle2
 } from "lucide-react";
+import ndhmLogo from '../assets/logo-abha.png';
+import fimLogo from '../assets/images.webp';
 
 interface CounterProps {
   target: number;
@@ -97,17 +99,17 @@ const Impact = () => {
     {
       title: "NDHM Integration",
       description: "Full digital health record integration",
-      icon: "🏥"
+      icon: 'https://mohfw.gov.in/sites/all/themes/cmf/images/emblem-dark.png'
     },
     {
       title: "Ayushman Bharat",
       description: "Universal health coverage support",
-      icon: "🇮🇳"
+      icon: ndhmLogo
     },
     {
       title: "Fit India Movement",
       description: "Preventive wellness programs",
-      icon: "💪"
+      icon: fimLogo
     }
   ];
 
@@ -132,17 +134,17 @@ const Impact = () => {
           </div>
 
           {/* Impact Metrics */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
             {impactMetrics.map((metric, index) => {
               const Icon = metric.icon;
               return (
                 <Card
                   key={index}
-                  className="bg-white/70 backdrop-blur-md shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:bg-amber-100/20 transition-all duration-500 animate-scale-in rounded-2xl border border-gray-100"
+                  className="bg-white backdrop-blur-md shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:bg-amber-100/20 transition-all duration-500 animate-scale-in rounded-2xl border border-gray-100"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <CardContent className="p-8 text-center">
-                    <div className={`${metric.bgColor} w-16 h-16 flex items-center justify-center mx-auto rounded-2xl mb-6`}>
+                    <div className={`${metric.bgColor} w-16 h-16 flex items-center justify-center mx-auto rounded-2xl mb-3`}>
                       <Icon className={`h-8 w-8 ${metric.color}`} />
                     </div>
                     <div className="text-4xl font-extrabold text-black mb-2">
@@ -165,16 +167,20 @@ const Impact = () => {
           </div>
 
           {/* Government Alignment */}
-          <div className="grid md:grid-cols-3 gap-8 mb-20">
+          <div className="grid md:grid-cols-3 gap-8 mb-10">
             {governmentAlignments.map((alignment, index) => (
               <Card
                 key={index}
-                className="bg-white/70 backdrop-blur-md shadow-lg hover:shadow-xl hover:-translate-y-2 hover:bg-amber-100/20 transition-all duration-500 animate-slide-up rounded-2xl border border-gray-100"
+                className="bg-white backdrop-blur-md shadow-lg hover:shadow-xl hover:-translate-y-2 hover:bg-amber-100/20 transition-all duration-500 animate-slide-up rounded-2xl border border-gray-100"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 flex items-center justify-center mx-auto rounded-full bg-gradient-to-br from-primary/20 to-tertiary/20 mb-6 text-3xl">
-                    {alignment.icon}
+                  <div className="w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                    <img
+                      src={alignment.icon}           
+                      alt={alignment.title}
+                      className="w-full h-full object-contain rounded-full"
+                    />
                   </div>
                   <h3 className="text-xl font-semibold text-black mb-3">
                     {alignment.title}
@@ -186,6 +192,7 @@ const Impact = () => {
               </Card>
             ))}
           </div>
+
 
           {/* Key Achievements */}
           <Card className="bg-white text-black shadow-xl rounded-3xl animate-fade-in">

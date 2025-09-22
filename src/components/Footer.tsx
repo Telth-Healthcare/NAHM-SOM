@@ -13,6 +13,7 @@ import {
   Home
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import logo from '../assets/logonahmsom.png';
 
 const Footer = () => {
 
@@ -54,11 +55,11 @@ const Footer = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <div className="flex items-center justify-center space-x-3 mb-6">
-              <div className=" rounded-lg p-2">
-                <div className="w-8 h-8 bg-red-100 bg-card rounded flex items-center justify-center">
-                  <span className="text-red-900 font-bold text-sm">N</span>
-                </div>
-              </div>
+              <img
+                src={logo}
+                alt="logo"
+                className="w-11 h-11"
+              />
               <div>
                 <h3 className="text-3xl font-extrabold">NAHM-SOM</h3>
                 <p className="text-sm text-white/70">National AI Health Mission</p>
@@ -133,25 +134,31 @@ const Footer = () => {
                       </div>
                     </div>
                   </div>
-                ))}
+              ))}
               </div>
             </div>
           </div>
 
           {/* CTA Section */}
-          <div className="bg-gradient-to-r from-blue-600 to-teal-600 rounded-3xl p-10 text-center mb-16 shadow-lg relative overflow-hidden">
+          <div className="bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-600 text-red-900 rounded-3xl p-10 text-center mb-16 shadow-lg relative overflow-hidden">
             <div className="absolute inset-0 bg-white/10 blur-2xl"></div>
-            <h4 className="text-3xl font-bold mb-4 text-white drop-shadow-lg">
+
+            <h4 className="text-3xl font-bold mb-4 drop-shadow-lg">
               Join the Healthcare Revolution
             </h4>
-            <p className="text-white/90 mb-6 max-w-2xl mx-auto text-lg">
+
+            <p className=" mb-6 max-w-2xl mx-auto text-lg">
               Be part of transforming healthcare access across India through AI-powered,
               community-centered wellness programs.
             </p>
+
             <a href="#partners">
               <Button
                 size="lg"
-                className="relative bg-white text-blue-700 hover:bg-gray-100 rounded-full px-10 py-6 font-medium shadow-xl hover:shadow-2xl transition-all"
+                className="relative bg-gradient-to-r from-yellow-300 to-yellow-500 text-gray-900 
+                 hover:from-yellow-400 hover:to-yellow-600 
+                 rounded-full px-10 py-6 font-semibold 
+                 shadow-xl hover:shadow-2xl transition-all"
               >
                 Partner With Us
               </Button>

@@ -217,7 +217,7 @@ const Centers = () => {
 
           {/* Visa-based Care Plan */}
           <motion.div
-            className="bg-gradient-to-r from-teal-600 to-blue-600 rounded-2xl p-8 lg:p-12 text-white mb-20 shadow-xl"
+            className="bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-600 rounded-2xl p-8 lg:p-12 text-red-900 mb-20 shadow-xl"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
