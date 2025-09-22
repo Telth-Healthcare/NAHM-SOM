@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Building, Stethoscope, Brain, Heart, ChevronLeft, ChevronRight, Cross, Hospital, HeartPulse } from 'lucide-react';
 import { motion } from "framer-motion";
-import imageOne from '../assets/img(1).jpeg';
-import imageTwo from '../assets/img(2).jpeg';
-import imageThree from '../assets/img(3).jpeg';
-import imageFour from '../assets/img(1).jpeg';
+import imageOne from '../assets/Hub.jpg';
+import imageTwo from '../assets/Hub1.jpg';
+import imageThree from '../assets/Hub2.jpg';
+import imageFour from '../assets/Hub.jpg';
 import advancedHub from '../assets/Advnced hub.jpg';
 
 const Centers = () => {
@@ -165,33 +165,13 @@ const Centers = () => {
                             />
 
                             {/* Animated Arrow */}
-                            <motion.div
-                              initial={{ opacity: 0, x: 0, y: 0 }}
-                              animate={{
-                                opacity: [0, 1, 1, 0],
-                                x: [0, -40, -40, 0], // arrow moves left toward big image
-                                y: [0, -10, 0, 0]   // slight bounce
-                              }}
-                              transition={{ duration: 2, repeat: Infinity, repeatDelay: 0.5 }}
-                              className="absolute -left-12 top-1/2 transform -translate-y-1/2"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-10 w-10 text-red-500"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                strokeWidth={2}
-                              >
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                              </svg>
-                            </motion.div>
+                           
                           </div>
                         </div>
 
                       </div>
                       {/* Right Image Section with Hover */}
-                      <div className="relative w-full h-[550px] rounded-2xl overflow-hidden group">
+                      <div className="relative w-full h-[450px] mt-10 rounded-2xl overflow-hidden group">
                         <img
                           src={center.image}
                           alt={center.title}

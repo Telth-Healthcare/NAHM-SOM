@@ -4,7 +4,7 @@ import {
   Heart,
   Mail,
   Phone,
-  MapPin, 
+  MapPin,
   ExternalLink,
   Download,
   Linkedin,
@@ -12,8 +12,11 @@ import {
   Facebook,
   Home
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+
+  const navigate = useNavigate()
   const quickLinks = [
     { name: "About Us", href: "#about" },
     { name: "Objectives", href: "#objectives" },
@@ -32,8 +35,8 @@ const Footer = () => {
 
   const organizations = [
     {
-      name: "Ameri India Trust",
-      role: "Programme Promoter",
+      name: "Nahm-Som Trust",
+      role: "",
       email: "contact@nahm-som.org",
       phone: "+91 82877 77505",
       address: "The chambers Vardhaman Trade Center, 3rd Floor, Nehru Place, New Delhi  110019"
@@ -106,7 +109,7 @@ const Footer = () => {
 
             {/* Organizations */}
             <div className="md:col-span-2">
-              <h4 className="text-lg font-semibold mb-4">Partner Organizations</h4>
+              <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
               <div className="grid md:grid-cols-2 gap-6">
                 {organizations.map((org, index) => (
                   <div
@@ -124,7 +127,7 @@ const Footer = () => {
                         <Phone className="h-4 w-4 mr-2 text-teal-400" />
                         {org.phone}
                       </div>
-                       <div className="flex items-center text-sm text-white/70">
+                      <div className="flex items-center text-sm text-white/70">
                         <Home className="h-10 w-10 mr-2 text-teal-400" />
                         {org.address}
                       </div>
@@ -145,12 +148,14 @@ const Footer = () => {
               Be part of transforming healthcare access across India through AI-powered,
               community-centered wellness programs.
             </p>
-            <Button
-              size="lg"
-              className="relative bg-white text-blue-700 hover:bg-gray-100 rounded-full px-10 py-6 font-medium shadow-xl hover:shadow-2xl transition-all"
-            >
-              Partner With Us
-            </Button>
+            <a href="#partners">
+              <Button
+                size="lg"
+                className="relative bg-white text-blue-700 hover:bg-gray-100 rounded-full px-10 py-6 font-medium shadow-xl hover:shadow-2xl transition-all"
+              >
+                Partner With Us
+              </Button>
+            </a>
           </div>
 
           {/* Bottom Section */}

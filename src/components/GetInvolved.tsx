@@ -30,8 +30,18 @@ const GetInvolved = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    alert("Thank you for your interest! We'll be in touch soon.");
+
+    // Construct the mailto link
+    const mailtoLink = `mailto:Shanmugaraj@mytelth.com?subject=${encodeURIComponent(
+      `New ${formData.type} Form Submission`
+    )}&body=${encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nOrganization: ${formData.organization}\nType: ${formData.type}\nMessage:\n${formData.message}`
+    )}`;
+
+    // Open the user's default email client
+    window.location.href = mailtoLink;
+
+    alert("Thank you! Your email client should open to send the message.");
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -126,13 +136,11 @@ const GetInvolved = () => {
           {/* Featured Image */}
           <div className="mb-16 animate-scale-in">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              {/* Keep image sharp */}
               <img
                 src={communitycare}
                 alt="Community Healthcare in Action"
                 className="w-full h-auto md:h-[500px] object-cover"
               />
-              {/* Gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent flex items-end">
                 <div className="p-8 text-white">
                   <h3 className="text-2xl font-bold mb-2 blur-[0.6px]">
@@ -145,7 +153,6 @@ const GetInvolved = () => {
               </div>
             </div>
           </div>
-
 
           {/* Involvement Options */}
           <div className="grid md:grid-cols-3 gap-8 mb-20">
@@ -181,7 +188,7 @@ const GetInvolved = () => {
 
                     <Button
                       onClick={() => setFormData({ ...formData, type: option.type })}
-                      className="w-full rounded-xl bg-gradient-to-r from-blue-600 to-teal-600 hover:opacity-90 transition"
+                      className="w-full rounded-xl border-2 group-hover:bg-red-900 hover:text-white transition"
                     >
                       {option.buttonText}
                       <ArrowRight className="ml-2 h-4 w-4" />
@@ -210,15 +217,16 @@ const GetInvolved = () => {
                   <div className="space-y-4">
                     <div className="flex items-center">
                       <Mail className="h-5 w-5 text-primary mr-3" />
-                      <span className="text-black">info@nahm-som.org</span>
+                      <span className="text-black">contact@nahm-som.org</span>
                     </div>
                     <div className="flex items-center">
                       <Phone className="h-5 w-5 text-primary mr-3" />
-                      <span className="text-black">+91 98765 43210</span>
+                      <span className="text-black">+91 82877 77505</span>
                     </div>
                     <div className="flex items-center">
                       <Building className="h-5 w-5 text-primary mr-3" />
-                      <span className="text-black">Delhi, Mumbai, Bangalore</span>
+                      <span className="text-black">The chambers
+                        Vardhaman Trade Center, 3rd Floor, Nehru Place, New Delhi  110019</span>
                     </div>
                   </div>
                 </div>
@@ -291,7 +299,7 @@ const GetInvolved = () => {
 
                   <Button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-blue-600 to-teal-600 text-white rounded-xl hover:opacity-90 transition"
+                    className="w-full  rounded-xl border-2 group-hover:bg-red-900 hover:text-white transition"
                   >
                     Send Message
                     <Send className="ml-2 h-4 w-4" />

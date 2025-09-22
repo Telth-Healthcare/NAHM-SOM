@@ -287,12 +287,12 @@ const Governance = () => {
           </div>
 
           {/* Call to Action */}
-          <div className="text-center mt-16">
+          {/* <div className="text-center mt-16">
             <button className="group bg-gradient-to-r from-blue-600 to-teal-600 text-white px-8 py-4 rounded-full font-medium shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center mx-auto">
               Explore Our Governance Model
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
