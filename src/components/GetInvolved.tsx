@@ -32,7 +32,7 @@ const GetInvolved = () => {
     e.preventDefault();
 
     // Construct the mailto link
-    const mailtoLink = `mailto:Shanmugaraj@mytelth.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:contact@nahm-som.org.com?subject=${encodeURIComponent(
       `New ${formData.type} Form Submission`
     )}&body=${encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nOrganization: ${formData.organization}\nType: ${formData.type}\nMessage:\n${formData.message}`
