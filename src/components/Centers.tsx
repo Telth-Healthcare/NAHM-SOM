@@ -6,6 +6,7 @@ import imageTwo from '../assets/Hub1.jpg';
 import imageThree from '../assets/Hub2.jpg';
 import imageFour from '../assets/Hub.jpg';
 import advancedHub from '../assets/Advnced hub.jpg';
+import creditCard from '../assets/credit_card_r9.jpg';
 
 const Centers = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -217,7 +218,7 @@ const Centers = () => {
 
           {/* Visa-based Care Plan */}
           <motion.div
-            className="bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-600 rounded-2xl p-8 lg:p-12 text-red-900 mb-20 shadow-xl"
+            className="bg-white rounded-2xl p-8 lg:p-12 text-black mb-20 shadow-xl"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -238,7 +239,7 @@ const Centers = () => {
                   ].map((item, i) => (
                     <motion.div
                       key={i}
-                      className="bg-white/20 p-4 rounded-lg hover:bg-white/30 transition"
+                      className="bg-gray-200 p-4 rounded-lg hover:bg-gray-200 transition"
                       whileHover={{ scale: 1.05 }}
                     >
                       <h4 className="font-semibold mb-2">{item.title}</h4>
@@ -247,12 +248,11 @@ const Centers = () => {
                   ))}
                 </div>
               </div>
-              <div className="text-center">
-                <div className="w-48 h-48 mx-auto bg-white/20 rounded-full flex items-center justify-center mb-6 shadow-inner">
-                  <Heart className="w-24 h-24" />
-                </div>
-                <p className="text-lg font-semibold">1000+ Centers Nationwide</p>
-                <p className="opacity-90">Unified care for all devotees</p>
+              <div className="text-center bg-white">
+                <img 
+                  src={creditCard}
+                  alt='creditCard'
+                />
               </div>
             </div>
           </motion.div>
