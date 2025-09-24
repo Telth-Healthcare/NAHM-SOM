@@ -16,7 +16,7 @@ import {
   Building,
   Send
 } from "lucide-react";
-import communitycare from "@/assets/JaLkO-XqT53iRLum8RsaD.png";
+import communitycare from "../assets/JaLkO-XqT53iRLum8RsaD.png";
 
 const GetInvolved = () => {
   const [formData, setFormData] = useState({
@@ -66,7 +66,7 @@ const GetInvolved = () => {
       color: "text-primary",
       bgColor: "bg-primary/10",
       bgBulletColor: 'bg-black',
-      buttonText: "Partner Today",
+      // buttonText: "Partner Today",
       type: "partner"
     },
     {
@@ -83,7 +83,7 @@ const GetInvolved = () => {
       color: "text-healthcare",
       bgColor: "bg-healthcare/10",
       bgBulletColor: 'bg-black',
-      buttonText: "Volunteer Now",
+      // buttonText: "Volunteer Now",
       type: "volunteer"
     },
     {
@@ -100,7 +100,7 @@ const GetInvolved = () => {
       color: "text-secondary",
       bgColor: "bg-secondary/10",
       bgBulletColor: 'bg-black',
-      buttonText: "Donate Today",
+      // buttonText: "Donate Today",
       type: "donate"
     }
   ];
@@ -186,13 +186,13 @@ const GetInvolved = () => {
                       ))}
                     </div>
 
-                    <Button
+                    {/* <Button
                       onClick={() => setFormData({ ...formData, type: option.type })}
                       className="w-full rounded-xl border-2 group-hover:bg-red-900 hover:text-white transition"
                     >
                       {option.buttonText}
                       <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
+                    </Button> */}
                   </CardContent>
                 </Card>
               );

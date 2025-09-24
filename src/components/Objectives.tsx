@@ -89,7 +89,7 @@ const Objectives = () => {
                   whileHover={{ scale: 1.05, rotate: 0.5 }}
                 >
                   <Card
-                    className="relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 shadow-lg hover:shadow-xl transition-all duration-300 group"
+                    className="relative overflow-hidden h-60 rounded-2xl border border-white/20 bg-white/10 shadow-lg hover:shadow-xl transition-all duration-300 group"
                   >
                     <CardContent className="p-6">
                       <div className={`${objective.bgColor} p-3 rounded-xl inline-block mb-4 group-hover:scale-110 transition-transform`}>

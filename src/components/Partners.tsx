@@ -25,7 +25,7 @@ const Partners = () => {
         "Sustainable community impact"
       ],
       color: "text-primary",
-      bgColor: "bg-primary/10",
+      bgColor: "bg-primary/30",
       cta: "Explore CSR Partnership"
     },
     {
@@ -39,7 +39,7 @@ const Partners = () => {
         "Recognition & honors"
       ],
       color: "text-secondary",
-      bgColor: "bg-secondary/10",
+      bgColor: "bg-secondary/30",
       cta: "Build Your Legacy"
     },
     {
@@ -53,7 +53,7 @@ const Partners = () => {
         "Spiritual wellness integration"
       ],
       color: "text-tertiary",
-      bgColor: "bg-tertiary/10",
+      bgColor: "bg-tertiary/30",
       cta: "Partner with Us"
     },
     {
@@ -67,7 +67,7 @@ const Partners = () => {
         "Public-private collaboration"
       ],
       color: "text-healthcare",
-      bgColor: "bg-healthcare/10",
+      bgColor: "bg-green-400/30",
       cta: "Government Collaboration"
     }
   ];
@@ -151,13 +151,13 @@ const Partners = () => {
                       ))}
                     </div>
 
-                    <Button
+                    {/* <Button
                       variant="outline"
                       className="w-full rounded-xl border-2 group-hover:bg-red-900 hover:text-white transition"
                     >
                       {partner.cta}
                       <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
+                    </Button> */}
                   </CardContent>
                 </Card>
               );

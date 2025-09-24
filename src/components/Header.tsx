@@ -54,9 +54,9 @@ const Header = () => {
             {/* <Button variant="outline" size="sm">
               Download Proposal
             </Button> */}
-            <Button variant="default" size="sm" className="relative text-white shadow-sm hover:shadow-2xl hover:scale-105 transition-all duration-300 text-sm px-6 py-3 rounded-md group">
+            {/* <Button variant="default" size="sm" className="relative text-white shadow-sm hover:shadow-2xl hover:scale-105 transition-all duration-300 text-sm px-6 py-3 rounded-md group">
               Get Started
-            </Button>
+            </Button> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -86,9 +86,9 @@ const Header = () => {
                 {/* <Button variant="outline" size="sm">
                   Download Proposal
                 </Button> */}
-                <Button variant="default" size="sm" className="bg-gradient-primary border-0">
+                {/* <Button variant="default" size="sm" className="bg-gradient-primary border-0">
                   Partner With Us
-                </Button>
+                </Button> */}
               </div>
             </nav>
           </div>
