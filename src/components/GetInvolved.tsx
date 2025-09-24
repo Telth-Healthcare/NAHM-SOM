@@ -293,7 +293,7 @@ const GetInvolved = () => {
                       value={formData.message}
                       onChange={handleInputChange}
                       className="mt-1"
-                      placeholder="Tell us about your interest in NAHM-SOM..."
+                      placeholder="Tell us how you would like to contribute to NAHM-SOM"
                     />
                   </div>
 

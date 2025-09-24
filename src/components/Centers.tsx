@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import imageOne from '../assets/Hub.jpg';
 import imageTwo from '../assets/Hub1.jpg';
 import imageThree from '../assets/Hub2.jpg';
-import imageFour from '../assets/Hub.jpg';
 import advancedHub from '../assets/Advnced hub.jpg';
 import creditCard from '../assets/credit_card_r9.jpg';
 
@@ -33,7 +32,7 @@ const Centers = () => {
   const centerTypes = [
     {
       title: "Basic AI Care Hubs",
-      description: "Accessible preventive health services with fundamental AI diagnostics and health monitoring capabilities.",
+      description: "Accessible preventive health services with Basic AI diagnostics and health monitoring capabilities.",
       features: ["Basic Health Screening", "Vital Signs Monitoring", "AI Health Analytics", "Preventive Care Guidance"],
       image: imageOne,
       color: "blue",
@@ -55,14 +54,6 @@ const Centers = () => {
       color: "purple",
       icon: Hospital,
     },
-    {
-      title: "Holistic Care Centers",
-      description: "Complete wellness approach combining modern AI healthcare with traditional AYUSH practices, yoga, and soul-oriented medicine.",
-      features: ["AYUSH Integration", "Yoga & Meditation", "Soul-Oriented Medicine", "Traditional + Modern Care"],
-      image: imageFour,
-      color: "orange",
-      icon: HeartPulse,
-    }
   ];
 
   const nextSlide = () => {
@@ -166,7 +157,7 @@ const Centers = () => {
                             />
 
                             {/* Animated Arrow */}
-                           
+
                           </div>
                         </div>
 
@@ -215,50 +206,8 @@ const Centers = () => {
               ))}
             </div>
           </div>
-
-          {/* Visa-based Care Plan */}
-          <motion.div
-            className="bg-white rounded-2xl p-8 lg:p-12 text-black mb-20 shadow-xl"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div>
-                <h3 className="text-3xl font-bold mb-6">Visa-Based Care Plan for Devotees</h3>
-                <p className="text-lg leading-relaxed mb-6 opacity-90">
-                  Ensures continuity of free healthcare services across all participating centers, allowing devotees and pilgrims to access care at any NAHM-SOM facility nationwide.
-                </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {[
-                    { title: "Universal Access", desc: "Healthcare at any center" },
-                    { title: "Continuity", desc: "Seamless care records" },
-                    { title: "Free Services", desc: "No cost to devotees" },
-                    { title: "Digital Records", desc: "AI-powered tracking" },
-                    { title: "Free for Travel", desc: "Experience a worry-free pilgrimage across states, knowing your health is protected." },
-                  ].map((item, i) => (
-                    <motion.div
-                      key={i}
-                      className="bg-gray-200 p-4 rounded-lg hover:bg-gray-200 transition"
-                      whileHover={{ scale: 1.05 }}
-                    >
-                      <h4 className="font-semibold mb-2">{item.title}</h4>
-                      <p className="text-sm opacity-90">{item.desc}</p>
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
-              <div className="text-center bg-white">
-                <img 
-                  src={creditCard}
-                  alt='creditCard'
-                />
-              </div>
-            </div>
-          </motion.div>
-
           {/* Technology Infrastructure */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 bg-white">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16 bg-white">
             {[
               {
                 icon: <Stethoscope className="w-8 h-8 text-blue-600" />,
@@ -295,12 +244,13 @@ const Centers = () => {
               },
               {
                 icon: <Cross className="w-8 h-8 text-rose-600" />,
-                title: "Spiritual + Healthcare Blend",
+                title: "Holistic Care Centers",
                 color: "bg-rose-100",
                 items: [
-                  "Care to Home",
-                  "Care to Community",
-                  "Doc @ Palm",
+                  "AYUSH Integration",
+                  "Yoga & Meditation",
+                  "Soul-Oriented Medicine",
+                  "Traditional + Modern Care",
                 ]
               }
             ].map((card, idx) => (
@@ -321,6 +271,47 @@ const Centers = () => {
               </motion.div>
             ))}
           </div>
+          {/* Visa-based Care Plan */}
+          <motion.div
+            className="bg-white rounded-2xl p-8 lg:p-12 text-black shadow-xl"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 className="text-3xl font-bold mb-6">Visa-Based Care Plan for Devotees</h3>
+                <p className="text-lg leading-relaxed mb-6 opacity-90">
+                  Ensures continuity of free healthcare services across all participating centers, allowing devotees and pilgrims to access care at any NAHM-SOM facility nationwide.
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {[
+                    { title: "Universal Access", desc: "Healthcare at any center" },
+                    { title: "Free Services", desc: "No cost to devotees" },
+                    { title: "Digital Records for Continuity in Care", desc: "AI-powered tracking & Seamless care records" },
+                    { title: "Safe Pilgrimage", desc: "Experience a worry-free pilgrimage across states, knowing your health is protected." },
+                  ].map((item, i) => (
+                    <motion.div
+                      key={i}
+                      className="bg-gray-200 p-4 rounded-lg hover:bg-gray-200 transition"
+                      whileHover={{ scale: 1.05 }}
+                    >
+                      <h4 className="font-semibold mb-2">{item.title}</h4>
+                      <p className="text-sm opacity-90">{item.desc}</p>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+              <div className="text-center bg-white">
+                <img
+                  src={creditCard}
+                  alt='creditCard'
+                />
+              </div>
+            </div>
+          </motion.div>
+
+
         </div>
       </div>
     </section>

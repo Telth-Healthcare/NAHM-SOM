@@ -108,7 +108,7 @@ const Partners = () => {
       <div className="container mx-auto px-4 lg:px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16 animate-fade-in">
+          <div className="text-center mb-10 animate-fade-in">
             <Badge variant="outline" className="mb-4 px-4 py-1 text-white bg-red-900  rounded-full shadow">
               Our Partners
             </Badge>
@@ -122,7 +122,7 @@ const Partners = () => {
           </div>
 
           {/* Partner Types */}
-          <div className="grid md:grid-cols-2 gap-8 mb-20">
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
             {partnerTypes.map((partner, index) => {
               const Icon = partner.icon;
               return (
@@ -165,7 +165,7 @@ const Partners = () => {
           </div>
 
           {/* Partnership Benefits */}
-          <Card className="bg-white text-black shadow-2xl rounded-2xl mb-20">
+          <Card className="bg-white text-black shadow-2xl rounded-2xl">
             <CardContent className="p-10 md:p-14 text-center">
               <Handshake className="h-16 w-16 mx-auto mb-6 text-red-900" />
               <h3 className="text-2xl md:text-3xl font-bold mb-4">Why Partner with NAHM-SOM?</h3>
@@ -192,7 +192,7 @@ const Partners = () => {
                 <div className="bg-gray-100/90 p-6 rounded-xl">
                   <Users className="h-8 w-8 mx-auto mb-3 text-blue-500" />
                   <h4 className="font-semibold mb-2">300M+ Devotees</h4>
-                  <p className="text-sm text-black">Reaching more than 300 million people</p>
+                  <p className="text-sm text-black">Reaching more than 300 million people in 5 years</p>
                 </div>
               </div>
             </CardContent>
@@ -200,12 +200,12 @@ const Partners = () => {
 
 
           {/* Testimonials */}
-          <div className="text-center mb-12">
+          {/* <div className="text-center mb-12">
             <h3 className="text-2xl font-bold text-foreground mb-2">What Partners Say</h3>
             <p className="text-muted-foreground">Voices from our growing partner ecosystem</p>
-          </div>
+          </div> */}
 
-          <div className="grid md:grid-cols-3 gap-8">
+          {/* <div className="grid md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <Card
                 key={index}
@@ -228,7 +228,7 @@ const Partners = () => {
                 </CardContent>
               </Card>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -62,7 +62,7 @@ const Impact = () => {
       value: 300,
       suffix: "M",
       label: "Beneficiaries",
-      description: "Communities served nationwide",
+      description: "Covered Nationwide in 5 Years",
       color: "text-emerald-600",
       bgColor: "bg-emerald-100"
     },
@@ -71,7 +71,7 @@ const Impact = () => {
       value: 85,
       suffix: "%",
       label: "Illness Reduction",
-      description: "Preventable diseases detected early",
+      description: "Through early Detection of Preventable Diseases",
       color: "text-secondary",
       bgColor: "bg-secondary/20"
     },
@@ -87,23 +87,23 @@ const Impact = () => {
   ];
 
   const achievements = [
-    "Integration with NDHM (National Digital Health Mission)",
-    "Alignment with Ayushman Bharat initiative",
-    "Support for Fit India Movement goals",
+    "Integration with NDHM",
+    "Support for Ayushman Bharat Ahead",
+    "Advancing Fit India Movement Goals",
     "Community-driven governance model",
-    "Sustainable CSR funding framework",
-    "Spiritual wellness integration"
+    "Sustainable CSR-Backed Model",
+    "Holistic Care with Spiritual Wellness"
   ];
 
   const governmentAlignments = [
     {
-      title: "NDHM Integration",
-      description: "Full digital health record integration",
+      title: "NDHM",
+      description: "Digitising health records",
       icon: 'https://mohfw.gov.in/sites/all/themes/cmf/images/emblem-dark.png'
     },
     {
       title: "Ayushman Bharat",
-      description: "Universal health coverage support",
+      description: "Universal health coverage",
       icon: ndhmLogo
     },
     {
@@ -122,14 +122,13 @@ const Impact = () => {
       <div className="container mx-auto px-4 lg:px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16 animate-fade-in">
-            <Badge variant="outline" className="mb-4 bg-primary text-white">Measurable Impact</Badge>
+          <div className="text-center mb-10 animate-fade-in">
+            <Badge variant="outline" className="mb-6 bg-primary text-white">Measurable Impact</Badge>
             <h2 className="text-3xl md:text-5xl font-extrabold text-foreground mb-6">
               <span className="text-primary">Transforming Lives Across India</span>
             </h2>
             <p className="text-lg text-black max-w-3xl mx-auto leading-relaxed">
-              Our mission delivers quantifiable impact through technology-enabled healthcare,
-              community empowerment, and sustainable wellness programs.
+              Our mission will deliver quantifiable impact through technology-enabled healthcare, community empowerment, and sustainable wellness programs.
             </p>
           </div>
 
@@ -177,7 +176,7 @@ const Impact = () => {
                 <CardContent className="p-8 text-center">
                   <div className="w-16 h-16 flex items-center justify-center mx-auto mb-3">
                     <img
-                      src={alignment.icon}           
+                      src={alignment.icon}
                       alt={alignment.title}
                       className="w-full h-full object-contain rounded-full"
                     />
@@ -219,7 +218,7 @@ const Impact = () => {
                       className="flex items-start animate-slide-up"
                       style={{ animationDelay: `${index * 0.1}s` }}
                     >
-                      <CheckCircle2 className="h-6 w-6 text-red-900 mr-3 mt-1 flex-shrink-0" />
+                      <CheckCircle2 className="h-6 w-6 text-red-900 mr-3 flex-shrink-0" />
                       <span className="text-black/95">{achievement}</span>
                     </div>
                   ))}

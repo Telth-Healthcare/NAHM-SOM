@@ -121,32 +121,32 @@ const Governance = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <img src={logoTelth} alt='logo' className="w-7 h-7" />
               </div>
-              <h3 className="text-2xl font-bold text-black text-center mb-4">Telth Healthcare</h3>
-              <p className="text-black text-center mb-6">Technology infrastructure and support</p>
+              <h3 className="text-2xl font-bold text-black text-center mb-4">Collaborative Care Managers</h3>
+              <p className="text-black text-center mb-6">Day to day operation and execution of Hubs</p>
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                     <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
                   </div>
-                  <span className="text-black">AI Care Hub Provision</span>
+                  <span className="text-black">Operation and Maintenance of Hub</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                     <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
                   </div>
-                  <span className="text-black">IoMT Device Management</span>
+                  <span className="text-black">Assisting Pilgrims</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                     <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
                   </div>
-                  <span className="text-black">Technology Training</span>
+                  <span className="text-black">Wellness Advise</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                     <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
                   </div>
-                  <span className="text-black">Continuous Innovation</span>
+                  <span className="text-black">Community Liaison</span>
                 </li>
               </ul>
             </div>
@@ -154,8 +154,8 @@ const Governance = () => {
 
           {/* Organizational Structure - Modern Design */}
           <div className="bg-white/70 backdrop-blur-sm rounded-3xl shadow-xl p-8 lg:p-12 border border-gray-200">
-            <div className="text-center mb-12">
-              <h3 className="text-3xl font-bold text-gray-900 mb-4">Organizational Structure</h3>
+            <div className="text-center mb-5">
+              <h3 className="text-3xl font-bold text-gray-900 mb-2">Organizational Structure</h3>
               <p className="text-gray-800 max-w-2xl mx-auto">
                 Our hierarchical framework ensures clear accountability and efficient decision-making across all levels
               </p>
@@ -233,8 +233,8 @@ const Governance = () => {
                       <ChevronDown className="w-6 h-6 text-teal-600" />
                     </div>
                     <div className="text-left">
-                      <h4 className="text-xl font-bold mb-1">Local Committees</h4>
-                      <p className="text-sm opacity-90">Operation</p>
+                      <h4 className="text-lg font-bold mb-1">Local Temple Health and Wellness Committee</h4>
+                      {/* <p className="text-sm opacity-90">Operation</p> */}
                     </div>
                   </div>
                 </div>
@@ -248,11 +248,11 @@ const Governance = () => {
                 </div>
                 <div className="bg-gradient-to-r from-blue-50 to-blue-100 text-gray-900 p-6 rounded-2xl shadow-md transform transition-all duration-500 hover:-translate-y-1 hover:shadow-lg">
                   <Users className="w-8 h-8 mx-auto mb-3" />
-                  <h4 className="font-bold text-center">Community Care Managers</h4>
+                  <h4 className="font-bold text-center">Collaborative Care Managers</h4>
                 </div>
                 <div className="bg-gradient-to-r from-amber-100 to-amber-200 text-gray-900 p-6 rounded-2xl shadow-md transform transition-all duration-500 hover:-translate-y-1 hover:shadow-lg">
                   <DollarSign className="w-8 h-8 mx-auto mb-3" />
-                  <h4 className="font-bold text-center">Funding Manager</h4>
+                  <h4 className="font-bold text-center">Operations & Finance Manager</h4>
                 </div>
               </div>
 

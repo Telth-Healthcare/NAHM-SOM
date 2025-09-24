@@ -53,7 +53,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 lg:px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             <div className="flex items-center justify-center space-x-3 mb-6">
               <img
                 src={logo}
@@ -134,7 +134,7 @@ const Footer = () => {
                       </div>
                     </div>
                   </div>
-              ))}
+                ))}
               </div>
             </div>
           </div>
@@ -148,8 +148,8 @@ const Footer = () => {
             </h4>
 
             <p className=" mb-6 max-w-2xl mx-auto text-lg">
-              Be part of transforming healthcare access across India through AI-powered,
-              community-centered wellness programs.
+              Join us in transforming healthcare access across India through AI-powered,
+              community-driven wellness programs.
             </p>
 
             <a href="#partners">
@@ -169,7 +169,7 @@ const Footer = () => {
           <div className="border-t border-white/20 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-sm text-white/60 mb-4 md:mb-0">
-                © 2024 NAHM-SOM. All rights reserved.
+                © 2025 NAHM-SOM. All rights reserved.
               </p>
 
               {/* Social Links */}

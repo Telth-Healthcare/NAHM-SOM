@@ -66,9 +66,9 @@ const Objectives = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16 animate-fade-in">
-            <Badge variant="outline" className="bg-red-900 text-white mb-4">Our Mission</Badge>
+            {/* <Badge variant="outline" className="bg-red-900 text-white mb-4">Our Mission</Badge> */}
             <h2 className="text-3xl md:text-5xl font-bold text-black mb-6 text-primary">
-              Objectives & Vision
+              Vision & Objectives  
             </h2>
             <p className="text-lg text-black max-w-3xl mx-auto leading-relaxed">
               Transforming healthcare delivery through strategic objectives that bridge traditional
@@ -113,7 +113,7 @@ const Objectives = () => {
           {/* Vision Statement */}
           <div className="relative">
             {/* Eye watermark */}
-            <Eye className="absolute center-0 top-1/2 mt-5 -translate-y-1/2 h-40 w-40 text-red-800/70" />
+            {/* <Eye className="absolute center-0 top-1/2 mt-5 -translate-y-1/2 h-40 w-40 text-red-800/70" /> */}
 
             {/* Content block */}
             <div className="relative z-10 text-center col-span-2 md:text-center">
@@ -127,15 +127,15 @@ const Objectives = () => {
 
               {/* Government Alignment */}
               <div className="flex flex-wrap gap-3 justify-center md:justify-center">
-                <Badge variant="secondary" className="bg-primary text-white border-white/30 hover:bg-white/30">
+                <Badge variant="secondary" className="bg-primary text-white border-white/30 hover:bg-primary">
                   <Lightbulb className="w-4 h-4 mr-2" />
                   NDHM Aligned
                 </Badge>
-                <Badge variant="secondary" className="bg-primary text-white border-white/30 hover:bg-white/30">
+                <Badge variant="secondary" className="bg-primary text-white border-white/30 hover:bg-primary">
                   <Shield className="w-4 h-4 mr-2" />
                   Ayushman Bharat
                 </Badge>
-                <Badge variant="secondary" className="bg-primary text-white border-red/30 hover:bg-red/30">
+                <Badge variant="secondary" className="bg-primary text-white border-red/30 hover:bg-primary">
                   <TrendingUp className="w-4 h-4 mr-2" />
                   Fit India Movement
                 </Badge>
