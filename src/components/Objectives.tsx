@@ -1,15 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import {
-  Target,
-  HeartHandshake,
-  Users2,
-  TrendingUp,
-  Shield,
-  Eye,
-  Lightbulb
-} from "lucide-react";
 import { motion } from "framer-motion";
+import HeartHandshake from "../assets/Health Centers.svg";
+import csrImg from "../assets/csr.svg";
+import Users2 from "../assets/Community-Managed.svg";
+import CommunityAngle from "../assets/Precise Care.svg";
+import Shields from "../assets/19.svg";
+import Target from '../assets/11.svg'
+import { Lightbulb, TrendingUp, Shield } from "lucide-react";
 
 const Objectives = () => {
   const objectives = [
@@ -21,7 +19,7 @@ const Objectives = () => {
       bgColor: "bg-healthcare/10"
     },
     {
-      icon: Target,
+      icon: CommunityAngle,
       title: "Spiritual + Community Angle",
       description: "Empowering Growth with Assistance, CRM, and Strategic Alliances.",
       color: "text-secondary",
@@ -42,14 +40,14 @@ const Objectives = () => {
       bgColor: "bg-primary/10"
     },
     {
-      icon: TrendingUp,
+      icon: csrImg,
       title: "Scalable CSR Model",
       description: "Create a transparent, scalable CSR-funded model that ensures long-term sustainability.",
       color: "text-tertiary",
       bgColor: "bg-tertiary/10"
     },
     {
-      icon: Shield,
+      icon: Shields,
       title: "Empower Communities",
       description: "Train and empower community leaders, care managers, and volunteers for sustainable impact.",
       color: "text-healthcare",
@@ -92,10 +90,10 @@ const Objectives = () => {
                     className="relative overflow-hidden h-60 rounded-2xl border border-white/20 bg-white/10 shadow-lg hover:shadow-xl transition-all duration-300 group"
                   >
                     <CardContent className="p-6">
-                      <div className={`${objective.bgColor} p-3 rounded-xl inline-block mb-4 group-hover:scale-110 transition-transform`}>
-                        <Icon className={`h-7 w-7 ${objective.color}`} />
+                      <div className={"inline-block group-hover:scale-110 transition-transform"}>
+                        <img src={Icon} alt={objective.title} className={"h-16 w-16"} />
                       </div>
-                      <h3 className="text-xl font-semibold text-black mb-3">
+                      <h3 className="text-xl font-semibold text-black mb-1">
                         {objective.title}
                       </h3>
                       <p className="text-black leading-relaxed">

@@ -3,14 +3,16 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
   Building2,
-  Users,
-  Heart,
   TrendingUp,
   Award,
   CheckCircle2
 } from "lucide-react";
 import ndhmLogo from '../assets/logo-abha.png';
 import fimLogo from '../assets/images.webp';
+import csrImg from "../assets/csr.svg";
+import aiImg from "../assets/Health Centers.svg";
+import Users from '../assets/12.svg';
+import Heart from '../assets/8.svg';
 
 interface CounterProps {
   target: number;
@@ -49,7 +51,7 @@ const AnimatedCounter = ({ target, suffix = "", prefix = "", duration = 2000 }: 
 const Impact = () => {
   const impactMetrics = [
     {
-      icon: Building2,
+      icon: aiImg,
       value: 1000,
       suffix: "+",
       label: "AI Health Centers",
@@ -76,7 +78,7 @@ const Impact = () => {
       bgColor: "bg-secondary/20"
     },
     {
-      icon: TrendingUp,
+      icon: csrImg,
       value: 100,
       suffix: "%",
       label: "CSR Funded",
@@ -142,9 +144,9 @@ const Impact = () => {
                   className="bg-white backdrop-blur-md shadow-lg hover:shadow-2xl hover:-translate-y-2 hover:bg-amber-100/20 transition-all duration-500 animate-scale-in rounded-2xl border border-gray-100"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <CardContent className="p-8 text-center">
-                    <div className={`${metric.bgColor} w-16 h-16 flex items-center justify-center mx-auto rounded-2xl mb-3`}>
-                      <Icon className={`h-8 w-8 ${metric.color}`} />
+                  <CardContent className="p-4 text-center">
+                    <div className={"flex items-center justify-center mx-auto rounded-2xl"}>
+                      <img src={Icon} alt={metric.label} className={"h-16 w-16"} />
                     </div>
                     <div className="text-4xl font-extrabold text-black mb-2">
                       <AnimatedCounter

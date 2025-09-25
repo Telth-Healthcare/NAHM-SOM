@@ -2,15 +2,18 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
-  Building2,
-  Heart,
   Landmark,
   Users,
   ArrowRight,
   Handshake,
   Star,
-  Globe
+  Globe,
+  Heart
 } from "lucide-react";
+import Building2 from "../assets/4.svg";
+import HeartImg  from "../assets/Precise Care.svg";
+import Government  from "../assets/4.svg";
+import LandmarkImg from '../assets/prambanan.svg'
 
 const Partners = () => {
   const partnerTypes = [
@@ -29,7 +32,7 @@ const Partners = () => {
       cta: "Explore CSR Partnership"
     },
     {
-      icon: Heart,
+      icon: HeartImg ,
       title: "Philanthropists",
       description: "Visionary individuals creating lasting healthcare legacies for communities.",
       benefits: [
@@ -43,7 +46,7 @@ const Partners = () => {
       cta: "Build Your Legacy"
     },
     {
-      icon: Landmark,
+      icon: LandmarkImg,
       title: "Temple Trusts / Temple Community",
       description: "Sacred institutions facilitating healthcare access in community centers.",
       benefits: [
@@ -57,7 +60,7 @@ const Partners = () => {
       cta: "Partner with Us"
     },
     {
-      icon: Users,
+      icon: Government,
       title: "Government Bodies",
       description: "Policy makers and administrators providing strategic guidance and support.",
       benefits: [
@@ -133,8 +136,8 @@ const Partners = () => {
                 >
                   <CardContent className="p-8">
                     <div className="flex items-center mb-6">
-                      <div className={`${partner.bgColor} p-3 rounded-xl mr-4 group-hover:scale-110 transition-transform`}>
-                        <Icon className={`h-8 w-8 ${partner.color}`} />
+                      <div className={" p-3 mr-4 group-hover:scale-110 transition-transform"}>
+                        <img src={Icon} alt={partner.title} className="h-16 w-16" />
                       </div>
                       <div>
                         <h3 className="text-xl font-semibold text-black mb-2">{partner.title}</h3>
@@ -175,22 +178,22 @@ const Partners = () => {
               </p>
               <div className="grid md:grid-cols-4 gap-6">
                 <div className="bg-white/10 p-6 rounded-xl">
-                  <Globe className="h-8 w-8 mx-auto mb-3 text-emerald-500" />
+                  <Globe className="h-8 w-8 mx-auto mb-3 text-red-900" />
                   <h4 className="font-semibold mb-2">National Reach</h4>
                   <p className="text-sm text-blac">Impact communities across all states</p>
                 </div>
                 <div className="bg-gray-100/90 p-6 rounded-xl">
-                  <Star className="h-8 w-8 mx-auto mb-3 text-yellow-500" />
+                  <Star className="h-8 w-8 mx-auto mb-3 text-red-900" />
                   <h4 className="font-semibold mb-2">Proven Model</h4>
                   <p className="text-sm text-black">Evidence-based sustainable approach</p>
                 </div>
                 <div className="bg-white/10 p-6 rounded-xl">
-                  <Heart className="h-8 w-8 mx-auto mb-3 text-pink-500" />
+                  <Heart className="h-8 w-8 mx-auto mb-3 text-red-900" />
                   <h4 className="font-semibold mb-2">Meaningful Impact</h4>
                   <p className="text-sm text-black">Direct community health transformation</p>
                 </div>
                 <div className="bg-gray-100/90 p-6 rounded-xl">
-                  <Users className="h-8 w-8 mx-auto mb-3 text-blue-500" />
+                  <Users className="h-8 w-8 mx-auto mb-3 text-red-900" />
                   <h4 className="font-semibold mb-2">300M+ Devotees</h4>
                   <p className="text-sm text-black">Reaching more than 300 million people in 5 years</p>
                 </div>

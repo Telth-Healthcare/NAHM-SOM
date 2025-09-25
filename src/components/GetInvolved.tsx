@@ -6,8 +6,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import {
-  Handshake,
-  Users,
   Heart,
   ArrowRight,
   Mail,
@@ -17,6 +15,9 @@ import {
   Send
 } from "lucide-react";
 import communitycare from "../assets/JaLkO-XqT53iRLum8RsaD.png";
+import Support from "../assets/Precise Care.svg";
+import Handshake from "../assets/Operations & Support.svg";
+import Users from "../assets/Holistic Care.svg";
 
 const GetInvolved = () => {
   const [formData, setFormData] = useState({
@@ -87,7 +88,7 @@ const GetInvolved = () => {
       type: "volunteer"
     },
     {
-      icon: Heart,
+      icon: Support,
       title: "Donate & Support",
       description: "Support holistic healthcare and soul-oriented wellness through philanthropic giving.",
       benefits: [
@@ -161,12 +162,12 @@ const GetInvolved = () => {
               return (
                 <Card
                   key={index}
-                  className="group bg-white/60 backdrop-blur-md border border-gray-200 rounded-2xl shadow-lg  hover:shadow-2xl hover:-translate-y-2 transition-all duration-500"
+                  className="group bg-white backdrop-blur-md border border-gray-200 rounded-2xl shadow-lg  hover:shadow-2xl hover:-translate-y-2 transition-all duration-500"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <CardContent className="p-8">
-                    <div className={`${option.bgColor} p-4 rounded-xl inline-block mb-6 group-hover:scale-110 transition-transform`}>
-                      <Icon className={`h-8 w-8 ${option.color}`} />
+                    <div className={" inline-block group-hover:scale-110 transition-transform"}>
+                      <img src={Icon} alt={option.title} className={"h-16 w-16"} />
                     </div>
 
                     <h3 className="text-xl font-semibold text-black mb-3">

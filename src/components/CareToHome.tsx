@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
-import { Stethoscope, Heart, Shield } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import Stethoscope from "../assets/18.svg";
+import Shield from "../assets/9.svg";
+import Heart from "../assets/2.svg";
 
 const CareToHome = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -30,7 +32,7 @@ const CareToHome = () => {
     <section
       id="care-to-home"
       ref={sectionRef}
-      className="relative py-16 overflow-hidden"
+      className="relative overflow-hidden"
     >
       <div className="container mx-auto px-4 lg:px-6 relative z-10 text-center">
         {/* Heading */}
@@ -45,7 +47,7 @@ const CareToHome = () => {
           expert support straight to your doorstep — for recovery, prevention,
           prediction, and peace of mind.
         </p>
-        <p className="text-lg font-medium text-black max-w-2xl mx-auto mb-12">
+        <p className="text-lg font-medium text-black max-w-2xl mx-auto mb-8">
           It's smarter, safer, and more dignified healthcare, right where you are.
         </p>
 
@@ -77,8 +79,8 @@ const CareToHome = () => {
             >
               <CardContent className="p-6 text-center">
                 <div className="flex flex-col items-center">
-                  <div className="p-4 rounded-xl mb-4 group-hover:scale-110 transition-transform">
-                    <feature.icon className="h-8 w-8 text-primary" />
+                  <div className=" group-hover:scale-110 transition-transform">
+                    <img src={feature.icon} alt={feature.title} className="h-16 w-16 text-primary" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-2">
                     {feature.title}

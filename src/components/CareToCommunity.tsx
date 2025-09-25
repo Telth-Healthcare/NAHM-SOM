@@ -2,6 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import { Zap, Heart, Brain, Battery, Eye } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import ZapImg from "../assets/6.svg";
+import BrainImg from "../assets/3.svg";
+import BatteryImg from "../assets/1.svg";
+import HeartImg from "../assets/Connected.svg";
 
 const CareToCommunity = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -31,10 +35,10 @@ const CareToCommunity = () => {
                 <h2 className="text-4xl md:text-5xl font-bold text-black mb-2">
                     Care At Community
                 </h2>
-                <p className="text-2xl text-gray-700 mb-6 font-medium">
+                <p className="text-2xl text-gray-700 mb-4 font-medium">
                     Portable Smart Health in a Suitcase
                 </p>
-                <p className="text-lg font-medium text-black max-w-xl mx-auto mb-12">
+                <p className="text-lg font-medium text-black max-w-xl mx-auto mb-8">
                     Get a full health check anytime, anywhere — no waiting rooms, no hassle.
                     A simple kit that puts 30+ diagnostics at your fingertips.
                 </p>
@@ -43,25 +47,25 @@ const CareToCommunity = () => {
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10">
                     {[
                         {
-                            icon: Zap,
+                            icon: ZapImg,
                             title: "30+ tests",
                             subtitle: "in minutes",
                             color: "from-yellow-400 to-orange-500",
                         },
                         {
-                            icon: Heart,
+                            icon: HeartImg,
                             title: "Non-invasive &",
                             subtitle: "invasive diagnostics",
                             color: "from-red-400 to-pink-500",
                         },
                         {
-                            icon: Brain,
+                            icon: BrainImg,
                             title: "AI-backed",
                             subtitle: "real-time insights",
                             color: "from-blue-400 to-indigo-500",
                         },
                         {
-                            icon: Battery,
+                            icon: BatteryImg,
                             title: "Battery-powered",
                             subtitle: "rugged design",
                             color: "from-green-400 to-teal-500",
@@ -73,9 +77,9 @@ const CareToCommunity = () => {
                         >
                             <CardContent className="p-4 text-center">
                                 <div
-                                    className={`bg-gradient-to-br ${feature.color} p-3 rounded-xl inline-flex items-center justify-center mb-3 group-hover:scale-110 transition`}
+                                    className={"inline-flex items-center justify-center group-hover:scale-110 transition"}
                                 >
-                                    <feature.icon className="h-6 w-6 text-white" />
+                                    <img src={feature.icon} alt={feature.title} className="h-16 w-16 text-white" />
                                 </div>
                                 <h3 className="font-bold text-gray-900 text-sm">
                                     {feature.title}
@@ -86,15 +90,12 @@ const CareToCommunity = () => {
                     ))}
                 </div>
 
-                {/* Checklist box BELOW */}
-                <div className="mt-10">
+                {/* <div className="mt-10">
                     <h3 className="text-2xl font-bold text-gray-900 mb-10 text-center">
                         All-in-One Preventive & Smart Diagnostics
                     </h3>
 
-                    {/* Three column row - each in Card */}
                     <div className="grid md:grid-cols-3 gap-8">
-                        {/* Vitals & Eye Tests */}
                         <Card className="bg-white/90 backdrop-blur-md shadow-lg border border-gray-200 hover:border-primary/30 transition">
                             <CardContent className="p-6">
                                 <div className="flex items-center mb-4">
@@ -117,7 +118,6 @@ const CareToCommunity = () => {
                             </CardContent>
                         </Card>
 
-                        {/* Blood & Risk Screening */}
                         <Card className="bg-white/90 backdrop-blur-md shadow-lg border border-gray-200 hover:border-primary/30 transition">
                             <CardContent className="p-6">
                                 <div className="flex items-center mb-4">
@@ -149,7 +149,6 @@ const CareToCommunity = () => {
                             </CardContent>
                         </Card>
 
-                        {/* Smart & Portable */}
                         <Card className="bg-white/90 backdrop-blur-md shadow-lg border border-gray-200 hover:border-primary/30 transition">
                             <CardContent className="p-6">
                                 <div className="flex items-center mb-4">
@@ -177,7 +176,7 @@ const CareToCommunity = () => {
                             </CardContent>
                         </Card>
                     </div>
-                </div>
+                </div> */}
 
             </div>
         </section>

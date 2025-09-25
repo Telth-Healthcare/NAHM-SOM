@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import logo from '../assets/logonahmsom.png';
+import logo from '../assets/logonahmsom.svg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,15 +24,18 @@ const Header = () => {
       <div className="container mx-auto px-4 lg:px-6">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <HashLink smooth to="/#" className="flex items-center space-x-2 cursor-pointer">
-            <img
-              src={logo}
-              alt="logo"
-              className="w-11 h-11"
-            />
-            <div className="hidden sm:block">
-              <h1 className="text-xl font-bold text-foreground">NAHM-SOM</h1>
-              <p className="text-xs text-muted-foreground">AI Health Mission</p>
+          <HashLink smooth to="/#" className="flex items-center space-x-1 cursor-pointer">
+            <div className="flex items-center min-h-[30px] min-w-[30px]">
+              <img
+                src={logo}
+                alt="logo"
+                className="h-32 w-auto object-contain"
+              />
+
+              <div className="hidden sm:block leading-tight -ml-3 py-3">
+                <h1 className="text-lg font-bold text-foreground text-red-900">NAHM-SOM</h1>
+                <p className="text-xs text-muted-foreground text-red-900">AI Health Mission</p>
+              </div>
             </div>
           </HashLink>
 

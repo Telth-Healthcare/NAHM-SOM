@@ -10,10 +10,12 @@ import {
   Linkedin,
   Twitter,
   Facebook,
-  Home
+  Home,
+  Instagram, 
+  Youtube
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import logo from '../assets/logonahmsom.png';
+import logo from '../assets/logonahmsom.svg';
 
 const Footer = () => {
 
@@ -53,22 +55,6 @@ const Footer = () => {
       <div className="container mx-auto px-4 lg:px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-10">
-            <div className="flex items-center justify-center space-x-3 mb-6">
-              <img
-                src={logo}
-                alt="logo"
-                className="w-11 h-11"
-              />
-              <div>
-                <h3 className="text-3xl font-extrabold">NAHM-SOM</h3>
-                <p className="text-sm text-white/70">National AI Health Mission</p>
-              </div>
-            </div>
-            <p className="text-white/80 max-w-2xl mx-auto leading-relaxed text-lg">
-              Blending AI Precision Health with Soul-Oriented Wellness for Every Community in India
-            </p>
-          </div>
 
           {/* Content Grid */}
           <div className="grid md:grid-cols-4 gap-10 mb-16">
@@ -174,14 +160,40 @@ const Footer = () => {
 
               {/* Social Links */}
               <div className="flex items-center space-x-5">
-                <a href="#" className="text-white/60 hover:text-blue-400 hover:scale-110 transition-transform">
+                <a
+                  href="https://www.linkedin.com/in/nahm-som-a84609385/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400/60 hover:text-blue-400 hover:scale-110 transition-transform"
+                >
                   <Linkedin className="h-6 w-6" />
                 </a>
-                <a href="#" className="text-white/60 hover:text-sky-400 hover:scale-110 transition-transform">
+
+                <a
+                  href="https://x.com/nahm_som"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sky-400/60 hover:text-sky-400 hover:scale-110 transition-transform"
+                >
                   <Twitter className="h-6 w-6" />
                 </a>
-                <a href="#" className="text-white/60 hover:text-blue-500 hover:scale-110 transition-transform">
-                  <Facebook className="h-6 w-6" />
+
+                <a
+                  href="https://www.instagram.com/_nahmsom_/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-pink-500/60 hover:text-pink-500 hover:scale-110 transition-transform"
+                >
+                  <Instagram className="h-6 w-6" />
+                </a>
+
+                <a
+                  href="https://studio.youtube.com/channel/UCuROi92Zjt7LQ_0VBJYIpyA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-600/60 hover:text-red-600 hover:scale-110 transition-transform"
+                >
+                  <Youtube className="h-6 w-6" />
                 </a>
               </div>
             </div>

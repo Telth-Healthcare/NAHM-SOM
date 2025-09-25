@@ -1,11 +1,18 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Building, Stethoscope, Brain, Heart, ChevronLeft, ChevronRight, Cross, Hospital, HeartPulse } from 'lucide-react';
+import { Building, ChevronLeft, ChevronRight, Hospital, HeartPulse } from 'lucide-react';
 import { motion } from "framer-motion";
 import imageOne from '../assets/Hub.jpg';
 import imageTwo from '../assets/Hub1.jpg';
 import imageThree from '../assets/Hub2.jpg';
 import advancedHub from '../assets/Advnced hub.jpg';
 import creditCard from '../assets/credit_card_r9.jpg';
+import aiImg from "../assets/Ai.svg";
+import aiImgOne from "../assets/1.svg";
+import aiImgTwo from "../assets/2.svg";
+import Stethoscope from "../assets/18.svg";
+import Brain from "../assets/3.svg";
+import Heart from "../assets/16.svg";
+import Cross from "../assets/17.svg";
 
 const Centers = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,7 +43,7 @@ const Centers = () => {
       features: ["Basic Health Screening", "Vital Signs Monitoring", "AI Health Analytics", "Preventive Care Guidance"],
       image: imageOne,
       color: "blue",
-      icon: Stethoscope,
+      icon: aiImg,
     },
     {
       title: "Advanced AI Care Hubs",
@@ -44,7 +51,7 @@ const Centers = () => {
       features: ["Advanced Diagnostics", "Telemedicine Support", "Specialized Equipment", "AI-Powered Analysis"],
       image: imageTwo,
       color: "teal",
-      icon: Building,
+      icon: aiImgOne,
     },
     {
       title: "Multi-Specialty AI Care Hubs",
@@ -52,7 +59,7 @@ const Centers = () => {
       features: ["Multiple Specialties", "Comprehensive Care", "Full AI Integration", "Wellness Programs"],
       image: imageThree,
       color: "purple",
-      icon: Hospital,
+      icon: aiImgTwo,
     },
   ];
 
@@ -120,8 +127,8 @@ const Centers = () => {
 
                         {/* Content */}
                         <div className="mb-6 relative z-10">
-                          <div className="w-16 h-16 bg-orange-200 rounded-full flex items-center justify-center mb-6 shadow-inner">
-                            <center.icon className="w-8 h-8 text-primary" />
+                          <div className="w-16 h-16 flex items-center justify-center mb-6">
+                            <img src={center.icon} alt={center.title} className="w-20 h-20 text-primary" />
                           </div>
                           <h3 className="text-3xl text-black font-bold mb-4">
                             {center.title}
@@ -210,7 +217,7 @@ const Centers = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16 bg-white">
             {[
               {
-                icon: <Stethoscope className="w-8 h-8 text-blue-600" />,
+                icon: Stethoscope,
                 title: "Facility Infrastructure",
                 color: "bg-blue-100",
                 items: [
@@ -221,7 +228,7 @@ const Centers = () => {
                 ]
               },
               {
-                icon: <Brain className="w-8 h-8 text-teal-600" />,
+                icon: Brain,
                 title: "Technology & AI",
                 color: "bg-teal-100",
                 items: [
@@ -232,7 +239,7 @@ const Centers = () => {
                 ]
               },
               {
-                icon: <Heart className="w-8 h-8 text-orange-600" />,
+                icon: Heart,
                 title: "Operations & Support",
                 color: "bg-orange-100",
                 items: [
@@ -243,7 +250,7 @@ const Centers = () => {
                 ]
               },
               {
-                icon: <Cross className="w-8 h-8 text-rose-600" />,
+                icon: Cross,
                 title: "Holistic Care Centers",
                 color: "bg-rose-100",
                 items: [
@@ -259,8 +266,8 @@ const Centers = () => {
                 className="bg-white rounded-xl shadow-2xl p-8 hover:shadow-[0 10px 25px rgba(0,0,0,0.8)] transition-shadow duration-300"
                 whileHover={{ y: -5 }}
               >
-                <div className={`w-16 h-16 ${card.color} rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner`}>
-                  {card.icon}
+                <div className={`w-16 h-16 flex items-center justify-center mx-auto mb-6`}>
+                   <img src={card.icon} alt={card.title} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 text-center mb-4">{card.title}</h3>
                 <div className="space-y-2 text-zinc-900 text-center">
@@ -293,7 +300,7 @@ const Centers = () => {
                   ].map((item, i) => (
                     <motion.div
                       key={i}
-                      className="bg-gray-200 p-4 rounded-lg hover:bg-gray-200 transition"
+                      className="bg-gray-100 p-4 rounded-lg hover:bg-gray-200 transition"
                       whileHover={{ scale: 1.05 }}
                     >
                       <h4 className="font-semibold mb-2">{item.title}</h4>
