@@ -25,14 +25,13 @@ const Header = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <HashLink smooth to="/#" className="flex items-center space-x-1 cursor-pointer">
-            <div className="flex items-center min-h-[30px] min-w-[30px]">
+            <div className="flex items-center">
               <img
                 src={logo}
                 alt="logo"
-                className="h-32 w-auto object-contain"
+                className="h-8 w-auto object-contain"
               />
-
-              <div className="hidden sm:block leading-tight -ml-3 py-3">
+              <div className="hidden sm:block leading-tight ml-2">
                 <h1 className="text-lg font-bold text-foreground text-red-900">NAHM-SOM</h1>
                 <p className="text-xs text-muted-foreground text-red-900">AI Health Mission</p>
               </div>

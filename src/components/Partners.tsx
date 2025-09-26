@@ -28,7 +28,7 @@ const Partners = () => {
         "Sustainable community impact"
       ],
       color: "text-primary",
-      bgColor: "bg-primary/30",
+      bgColor: "bg-primary",
       cta: "Explore CSR Partnership"
     },
     {
@@ -41,8 +41,8 @@ const Partners = () => {
         "Transparent fund utilization",
         "Recognition & honors"
       ],
-      color: "text-secondary",
-      bgColor: "bg-secondary/30",
+      color: "text-primary",
+      bgColor: "bg-primary",
       cta: "Build Your Legacy"
     },
     {
@@ -55,8 +55,8 @@ const Partners = () => {
         "Infrastructure development",
         "Spiritual wellness integration"
       ],
-      color: "text-tertiary",
-      bgColor: "bg-tertiary/30",
+      color: "text-primary",
+      bgColor: "bg-primary",
       cta: "Partner with Us"
     },
     {
@@ -69,8 +69,8 @@ const Partners = () => {
         "National health mission integration",
         "Public-private collaboration"
       ],
-      color: "text-healthcare",
-      bgColor: "bg-green-400/30",
+      color: "text-primary",
+      bgColor: "bg-primary",
       cta: "Government Collaboration"
     }
   ];

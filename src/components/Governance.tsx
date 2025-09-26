@@ -41,7 +41,7 @@ const Governance = () => {
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
               <span className=" text-primary">Governance Structure</span>
             </h2>
-            <div className="w-32 h-1 bg-gradient-to-r from-red-600 to-red-600 mx-auto mb-6 rounded-full"></div>
+            {/* <div className="w-32 h-1 bg-gradient-to-r from-red-600 to-red-600 mx-auto mb-6 rounded-full"></div> */}
             <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
               A multi-tiered governance structure designed for accountability, transparency, and community-led implementation
             </p>
@@ -50,7 +50,7 @@ const Governance = () => {
           {/* Governance Cards - Modern Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20">
 
-            <div className="group bg-white backdrop-blur-sm rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 p-8 border border-gray-100 hover:border-blue-200 relative overflow-hidden">
+            <div className="group bg-white backdrop-blur-sm rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 p-8 border border-gray-100 hover:border-red-200 relative overflow-hidden">
               {/* <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 to-teal-600"></div> */}
               <div className="flex items-center justify-center mx-auto mb-2 group-hover:scale-110 transition-transform duration-300">
                 <img src={groupImgOne} alt='groupImg' className="w-16 h-16" />
@@ -59,33 +59,33 @@ const Governance = () => {
               <p className="text-black text-center mb-6">Strategic oversight and policy direction</p>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                    <div className="w-2 h-2 bg-red-900 rounded-full"></div>
                   </div>
                   <span className="text-black">Oversight & Strategic Direction</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                    <div className="w-2 h-2 bg-red-900 rounded-full"></div>
                   </div>
                   <span className="text-black">Policy Approvals & Compliance</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                    <div className="w-2 h-2 bg-red-900 rounded-full"></div>
                   </div>
                   <span className="text-black">Government Relations</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                    <div className="w-2 h-2 bg-red-900 rounded-full"></div>
                   </div>
                   <span className="text-black">CSR Partner Coordination</span>
                 </li>
               </ul>
             </div>
 
-            <div className="group bg-white backdrop-blur-sm rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 p-8 border border-gray-100 hover:border-teal-200 relative overflow-hidden">
+            <div className="group bg-white backdrop-blur-sm rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 p-8 border border-gray-100 hover:border-red-200 relative overflow-hidden">
               {/* <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-teal-600 to-green-600"></div> */}
               <div className=" flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                 <img src={groupImg} alt='groupImg' className="w-10 h-10" />
@@ -94,33 +94,33 @@ const Governance = () => {
               <p className="text-black text-center mb-6">Community implementation and management</p>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-                    <div className="w-2 h-2 bg-teal-600 rounded-full"></div>
+                  <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                    <div className="w-2 h-2 bg-red-900 rounded-full"></div>
                   </div>
                   <span className="text-black">Community Leader Chairs</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-                    <div className="w-2 h-2 bg-teal-600 rounded-full"></div>
+                  <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                    <div className="w-2 h-2 bg-red-900 rounded-full"></div>
                   </div>
                   <span className="text-black">Care Manager Operations</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-                    <div className="w-2 h-2 bg-teal-600 rounded-full"></div>
+                  <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                    <div className="w-2 h-2 bg-red-900 rounded-full"></div>
                   </div>
                   <span className="text-black">Finance Management</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-                    <div className="w-2 h-2 bg-teal-600 rounded-full"></div>
+                  <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                    <div className="w-2 h-2 bg-red-900 rounded-full"></div>
                   </div>
                   <span className="text-black">Volunteer Coordination</span>
                 </li>
               </ul>
             </div>
 
-            <div className="group bg-white/80 backdrop-blur-sm rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 p-8 border border-gray-100 hover:border-orange-200 relative overflow-hidden">
+            <div className="group bg-white/80 backdrop-blur-sm rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 p-8 border border-gray-100 hover:border-red-200 relative overflow-hidden">
               {/* <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-600 to-amber-600"></div> */}
               <div className=" flex items-center justify-center mx-auto mb-2 group-hover:scale-110 transition-transform duration-300">
                 <img src={groupImgTwo} alt='logo' className="w-16 h-16" />
@@ -129,26 +129,26 @@ const Governance = () => {
               <p className="text-black text-center mb-6">Day to day operation and execution of Hubs</p>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-                    <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
+                  <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                    <div className="w-2 h-2 bg-red-900 rounded-full"></div>
                   </div>
                   <span className="text-black">Operation and Maintenance of Hub</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-                    <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
+                  <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                    <div className="w-2 h-2 bg-red-900 rounded-full"></div>
                   </div>
                   <span className="text-black">Assisting Pilgrims</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-                    <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
+                  <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                    <div className="w-2 h-2 bg-red-900 rounded-full"></div>
                   </div>
                   <span className="text-black">Wellness Advise</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-                    <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
+                  <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                    <div className="w-2 h-2 bg-red-900 rounded-full"></div>
                   </div>
                   <span className="text-black">Community Liaison</span>
                 </li>
@@ -177,7 +177,7 @@ const Governance = () => {
                       <ChevronDown className="w-6 h-6 text-red-900" />
                     </div>
                     <div className="text-left">
-                      <h4 className="text-xl font-bold mb-1">NAHM-SOM</h4>
+                      <h4 className="text-md font-bold mb-1">NAHM-SOM</h4>
                     </div>
                   </div>
                 </div>
@@ -191,7 +191,7 @@ const Governance = () => {
                       <ChevronDown className="w-6 h-6 text-red-900" />
                     </div>
                     <div>
-                      <h4 className="text-xl font-bold mb-1">National Committee</h4>
+                      <h4 className="text-md font-bold mb-1">National Committee</h4>
                       <p className="text-sm opacity-90">Strategic Oversight, Policy & Program Promoter</p>
                     </div>
                   </div>
@@ -200,32 +200,28 @@ const Governance = () => {
 
               {/* Level 2 - Partners */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12 relative z-10">
+                {/* Ameri India Trust */}
                 <div className="bg-gradient-to-r from-blue-50 to-blue-100 text-gray-900 p-6 rounded-2xl shadow-md transform transition-all duration-500 hover:-translate-y-1 hover:shadow-lg">
-                  <div className="flex items-center">
-                    <div className="w-12 h-15 flex items-center justify-center mr-4">
-                      <img src={ameriLogo} alt="amerilogo" className="w-fit h-fit" />
-                    </div>
+                  <div className="flex items-center justify-center space-x-3">
+                    <img src={ameriLogo} alt="amerilogo" className="w-12 h-12 object-contain" />
                     <div>
-                      <h4 className="text-lg font-bold">Ameri India Trust</h4>
+                      <h4 className="text-md font-bold">Ameri India Trust</h4>
                       <p className="text-sm opacity-90">Device Supplier</p>
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-r from-purple-50 to-purple-100 text-gray-900 p-6 rounded-2xl shadow-md transform transition-all duration-500 hover:-translate-y-1 hover:shadow-lg">
-                  <div className="flex items-center">
-                    <div className="w-12 h-12 bg-white/30 rounded-xl flex items-center justify-center mr-4">
-                      <img src={logoTelth} alt="logo" className="w-7 h-7" />
+                {/* CSR & Partner */}
+                <div className="bg-gradient-to-r from-purple-100 to-purple-200 text-gray-900 p-6 rounded-2xl shadow-md transform transition-all duration-500 hover:-translate-y-1 hover:shadow-lg">
+                  <div className="flex items-center justify-center space-x-3">
+                    <div className="w-12 h-12 bg-white/30 rounded-xl flex items-center justify-center">
+                      <img src={logoTelth} alt="logo" className="w-7 h-7 object-contain" />
                     </div>
                     <div>
-                      <h4 className="text-lg font-bold">CSR & Partner</h4>
+                      <h4 className="text-md font-bold">CSR & Partner</h4>
                       <p className="text-sm opacity-90">Technology & Clinical Partner</p>
                     </div>
                   </div>
-                </div>
-
-                <div className="flex justify-center col-span-2 lg:hidden">
-                  <ChevronDown className="w-6 h-6 text-blue-300" />
                 </div>
               </div>
 
@@ -237,7 +233,7 @@ const Governance = () => {
                       <ChevronDown className="w-6 h-6 text-red-900" />
                     </div>
                     <div className="text-left">
-                      <h4 className="text-lg font-bold mb-1">Local Temple Health and Wellness Committee</h4>
+                      <h4 className="text-md font-bold mb-1">Local Temple Health and Wellness Committee</h4>
                       {/* <p className="text-sm opacity-90">Operation</p> */}
                     </div>
                   </div>
@@ -246,32 +242,54 @@ const Governance = () => {
 
               {/* Level 4 - Operational Teams */}
               <div className="grid grid-cols-1 md:grid-cols-3 mb-12 gap-6 relative z-10">
+                {/* Health & Wealth Community Leaders */}
                 <div className="bg-gradient-to-r from-emerald-100 to-emerald-200 text-gray-900 p-6 rounded-2xl shadow-md transform transition-all duration-500 hover:-translate-y-1 hover:shadow-lg">
-                  <Award className="w-8 h-8 mx-auto mb-3 text-red-900" />
-                  <h4 className="font-bold text-center">Health & Wealth Community Leaders</h4>
+                  <div className="flex items-center justify-center space-x-3">
+                    <Award className="w-8 h-8 text-red-900" />
+                    <h4 className="font-bold text-md">Health & Wealth Community Leaders</h4>
+                  </div>
                 </div>
+
+                {/* Collaborative Care Managers */}
                 <div className="bg-gradient-to-r from-blue-50 to-blue-100 text-gray-900 p-6 rounded-2xl shadow-md transform transition-all duration-500 hover:-translate-y-1 hover:shadow-lg">
-                  <Users className="w-8 h-8 mx-auto mb-3 text-red-900" />
-                  <h4 className="font-bold text-center">Collaborative Care Managers</h4>
+                  <div className="flex items-center justify-center space-x-3">
+                    <Users className="w-8 h-8 text-red-900" />
+                    <h4 className="font-bold text-md">Collaborative Care Managers</h4>
+                  </div>
                 </div>
+
+                {/* Operations & Finance Manager */}
                 <div className="bg-gradient-to-r from-amber-100 to-amber-200 text-gray-900 p-6 rounded-2xl shadow-md transform transition-all duration-500 hover:-translate-y-1 hover:shadow-lg">
-                  <DollarSign className="w-8 h-8 mx-auto mb-3 text-red-900" />
-                  <h4 className="font-bold text-center">Operations & Finance Manager</h4>
+                  <div className="flex items-center justify-center space-x-3">
+                    <DollarSign className="w-8 h-8 text-red-900" />
+                    <h4 className="font-bold text-md">Operations & Finance Manager</h4>
+                  </div>
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
+                {/* Nurse */}
                 <div className="bg-gradient-to-r from-pink-100 to-pink-200 text-gray-900 p-6 rounded-2xl shadow-md transform transition-all duration-500 hover:-translate-y-1 hover:shadow-lg">
-                  <Stethoscope className="w-8 h-8 mx-auto mb-3 text-red-900" />
-                  <h4 className="font-bold text-center">Nurse</h4>
+                  <div className="flex items-center justify-center space-x-3">
+                    <Stethoscope className="w-8 h-8 text-red-900" />
+                    <h4 className="font-bold text-md">Nurse</h4>
+                  </div>
                 </div>
+
+                {/* Physician */}
                 <div className="bg-gradient-to-r from-indigo-100 to-indigo-200 text-gray-900 p-6 rounded-2xl shadow-md transform transition-all duration-500 hover:-translate-y-1 hover:shadow-lg">
-                  <HeartPulse className="w-8 h-8 mx-auto mb-3 text-red-900" />
-                  <h4 className="font-bold text-center">Physician</h4>
+                  <div className="flex items-center justify-center space-x-3">
+                    <HeartPulse className="w-8 h-8 text-red-900" />
+                    <h4 className="font-bold text-md">Physician</h4>
+                  </div>
                 </div>
+
+                {/* Volunteers */}
                 <div className="bg-gradient-to-r from-teal-100 to-teal-200 text-gray-900 p-6 rounded-2xl shadow-md transform transition-all duration-500 hover:-translate-y-1 hover:shadow-lg">
-                  <Handshake className="w-8 h-8 mx-auto mb-3 text-red-900" />
-                  <h4 className="font-bold text-center">Volunteers</h4>
+                  <div className="flex items-center justify-center space-x-3">
+                    <Handshake className="w-8 h-8 text-red-900" />
+                    <h4 className="font-bold text-md">Volunteers</h4>
+                  </div>
                 </div>
               </div>
             </div>

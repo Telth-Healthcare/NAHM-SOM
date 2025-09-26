@@ -1,7 +1,7 @@
   import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Building2, Stethoscope, Heart, Users } from "lucide-react";
 import logoTelth from '../assets/TELTH LOGO.svg';
+import ameriLogo from '../assets/Ameri Logo.png'
 
 const About = () => {
   return (
@@ -32,11 +32,11 @@ const About = () => {
           {/* Organization Cards */}
           <div className="grid md:grid-cols-2 gap-8 ">
             {/* Ameri India Trust */}
-            <Card className="relative bg-gradient-to-br from-white/80 to-primary/5 shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-500 rounded-2xl border border-primary/10 backdrop-blur-md animate-slide-up">
+            <Card className="relative bg-white shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-500 rounded-2xl border border-primary/10 backdrop-blur-md animate-slide-up">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
-                  <div className="bg-primary/10 p-3 rounded-xl mr-4">
-                    <Building2 className="h-8 w-8 text-primary" />
+                  <div className=" p-3 rounded-xl mr-4">
+                    <img src={ameriLogo} alt="amerilogo" className="w-12 h-12 object-contain" />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-black">Ameri India Trust</h3>
@@ -57,7 +57,7 @@ const About = () => {
             </Card>
 
             {/* Telth Healthcare */}
-            <Card className="relative bg-gradient-to-br from-white/80 to-primary/5 shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-500 rounded-2xl border border-primary/10 backdrop-blur-md animate-slide-up">
+            <Card className="relative bg-white shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-500 rounded-2xl border border-primary/10 backdrop-blur-md animate-slide-up">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <div className="bg-gradient-to-br from-purple-400 to-purple-500 p-3 rounded-xl mr-4">

@@ -99,7 +99,7 @@ const Centers = () => {
             <h2 className="text-4xl sm:text-5xl font-extrabold mb-6 text-primary bg-clip-text">
               Centers & Model
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-red-600 to-red-600 mx-auto mb-4 rounded-full"></div>
+            {/* <div className="w-24 h-1 bg-gradient-to-r from-red-600 to-red-600 mx-auto mb-4 rounded-full"></div> */}
             <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
               Comprehensive AI-powered healthcare centers designed for community wellness
             </p>
@@ -300,7 +300,7 @@ const Centers = () => {
                   ].map((item, i) => (
                     <motion.div
                       key={i}
-                      className="bg-gray-100 p-4 rounded-lg hover:bg-gray-200 transition"
+                      className="bg-gray-200 p-4 rounded-lg hover:bg-gray-300 transition"
                       whileHover={{ scale: 1.05 }}
                     >
                       <h4 className="font-semibold mb-2">{item.title}</h4>
