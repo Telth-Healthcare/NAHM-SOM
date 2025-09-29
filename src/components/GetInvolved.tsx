@@ -18,39 +18,9 @@ import communitycare from "../assets/JaLkO-XqT53iRLum8RsaD.png";
 import Support from "../assets/Precise Care.svg";
 import Handshake from "../assets/Operations & Support.svg";
 import Users from "../assets/Holistic Care.svg";
+import ContactUs from "./ContactUs";
 
 const GetInvolved = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    organization: "",
-    message: "",
-    type: "partner"
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-
-    // Construct the mailto link
-    const mailtoLink = `mailto:contact@nahm-som.org.com?subject=${encodeURIComponent(
-      `New ${formData.type} Form Submission`
-    )}&body=${encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nOrganization: ${formData.organization}\nType: ${formData.type}\nMessage:\n${formData.message}`
-    )}`;
-
-    // Open the user's default email client
-    window.location.href = mailtoLink;
-
-    alert("Thank you! Your email client should open to send the message.");
-  };
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
 
   const involvementOptions = [
     {
@@ -201,114 +171,9 @@ const GetInvolved = () => {
           </div>
 
           {/* Contact Form */}
-          <Card className="bg-white/70 backdrop-blur-md border border-gray-200 rounded-2xl shadow-xl animate-fade-in">
-            <CardContent className="p-8 md:p-12">
-              <div className="grid md:grid-cols-2 gap-8">
-                {/* Contact Info */}
-                <div>
-                  <Badge variant="outline" className="mb-4 text-white bg-primary">Contact Us</Badge>
-                  <h3 className="text-2xl font-bold text-black mb-4">
-                    Ready to Make an Impact?
-                  </h3>
-                  <p className="text-black leading-relaxed mb-6">
-                    Connect with our team to explore partnership opportunities, volunteer
-                    programs, or learn more about supporting the NAHM-SOM mission.
-                  </p>
-
-                  <div className="space-y-4">
-                    <div className="flex items-center">
-                      <Mail className="h-5 w-5 text-primary mr-3" />
-                      <span className="text-black">contact@nahm-som.org</span>
-                    </div>
-                    <div className="flex items-center">
-                      <Phone className="h-5 w-5 text-primary mr-3" />
-                      <span className="text-black">+91 82877 77505</span>
-                    </div>
-                    <div className="flex items-center">
-                      <Building className="h-5 w-5 text-primary mr-3" />
-                      <span className="text-black">The chambers
-                        Vardhaman Trade Center, 3rd Floor, Nehru Place, New Delhi  110019</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Form */}
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div>
-                    <Label htmlFor="name">Full Name *</Label>
-                    <Input
-                      id="name"
-                      name="name"
-                      type="text"
-                      required
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      className="mt-1"
-                    />
-                  </div>
-
-                  <div>
-                    <Label htmlFor="email">Email Address *</Label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      required
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      className="mt-1"
-                    />
-                  </div>
-
-                  <div>
-                    <Label htmlFor="phone">Phone Number</Label>
-                    <Input
-                      id="phone"
-                      name="phone"
-                      type="tel"
-                      value={formData.phone}
-                      onChange={handleInputChange}
-                      className="mt-1"
-                    />
-                  </div>
-
-                  <div>
-                    <Label htmlFor="organization">Organization</Label>
-                    <Input
-                      id="organization"
-                      name="organization"
-                      type="text"
-                      value={formData.organization}
-                      onChange={handleInputChange}
-                      className="mt-1"
-                    />
-                  </div>
-
-                  <div>
-                    <Label htmlFor="message">Message *</Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      required
-                      rows={4}
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      className="mt-1"
-                      placeholder="Tell us how you would like to contribute to NAHM-SOM"
-                    />
-                  </div>
-
-                  <Button
-                    type="submit"
-                    className="w-full  rounded-xl border-2 group-hover:bg-red-900 hover:text-white transition"
-                  >
-                    Send Message
-                    <Send className="ml-2 h-4 w-4" />
-                  </Button>
-                </form>
-              </div>
-            </CardContent>
-          </Card>
+          <div id="contact">
+            <ContactUs />
+          </div>
         </div>
       </div>
     </section>

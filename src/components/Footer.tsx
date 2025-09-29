@@ -138,7 +138,7 @@ const Footer = () => {
               community-driven wellness programs.
             </p>
 
-            <a href="#partners">
+            <a href="#contact">
               <Button
                 size="lg"
                 className="relative bg-gradient-to-r from-yellow-300 to-yellow-500 text-gray-900 

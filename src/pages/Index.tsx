@@ -16,7 +16,6 @@ const Schema = lazy(() => import("@/components/Schema"));
 const Governance = lazy(() => import("@/components/Governance"));
 const CareToHome = lazy(() => import("@/components/CareToHome"));
 const CareToCommunity = lazy(() => import("@/components/CareToCommunity"));
-const Empty = lazy(() => import("@/components/Empty"));
 
 const Index = () => {
   return (
@@ -30,11 +29,6 @@ const Index = () => {
 
       <main>
         <Hero />
-
-        {/* <Suspense fallback={<div className="h-40 flex items-center justify-center">Loading Centers...</div>}>
-          <Empty />
-        </Suspense> */}
-
         
         <Suspense fallback={<div className="h-40 flex items-center justify-center">Loading Centers...</div>}>
           <Centers />

@@ -79,7 +79,7 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-slide-up">
-              <a href="#partners">
+              <a href="#contact">
                 <Button
                   size="lg"
                   className="relative text-[#FDFBF7] shadow-lg bg-amber-800 hover:shadow-2xl hover:scale-105 transition-all duration-300 text-lg px-10 py-6 rounded-full group"
