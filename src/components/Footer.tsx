@@ -42,7 +42,7 @@ const Footer = () => {
       role: "",
       email: "contact@nahm-som.org",
       phone: "+91 82877 77505",
-      address: "The chambers Vardhaman Trade Center, 3rd Floor, Nehru Place, New Delhi  110019"
+      address: "The Chambers Vardhaman Trade Center, 3rd Floor, Nehru Place, New Delhi  110019"
     },
   ];
 

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import logo from '../assets/logonahmsom.svg';
+import logo from '../assets/logo.svg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,7 +29,7 @@ const Header = () => {
               <img
                 src={logo}
                 alt="logo"
-                className="h-8 w-auto object-contain"
+                className="h-10 w-auto object-contain"
               />
               <div className="hidden sm:block leading-tight ml-2">
                 <h1 className="text-lg font-bold text-foreground text-red-900">NAHM-SOM</h1>
