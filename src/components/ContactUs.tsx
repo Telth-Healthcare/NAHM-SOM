@@ -47,7 +47,7 @@ const ContactUs = () => {
         const data = await response.json();
 
         if (data.success) {
-            setResult("✅ Form Submitted Successfully!");
+            setResult("Form Submitted Successfully!");
             setFormData({
                 name: "",
                 email: "",
