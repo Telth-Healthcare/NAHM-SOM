@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import logo from '../assets/logo2.svg';
+import logo from '../assets/nahamsom logonew - Copy.svg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

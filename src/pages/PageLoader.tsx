@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Heart, Activity } from "lucide-react";
-import logo from "../assets/logo2.svg";
+import logo from "../assets/nahamsom logonew.svg";
 
 const PageLoader = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -136,7 +136,7 @@ const PageLoader = () => {
                 ))}
               </div>
 
-              <p className="text-white text-semibold text-lg ">Fostering Spiritual Wellness For A Healthcare Life...</p>
+              <p className="text-white text-semibold text-lg ">Fostering Spiritual Wellness For A Healthier Life...</p>
             </motion.div>
 
             {/* Progress bar */}
