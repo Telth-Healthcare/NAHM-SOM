@@ -1,9 +1,9 @@
 import React, { Suspense, lazy } from "react";
 
-// Eager load = critical components (always needed above the fold)
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
+import PageLoader from "../pages/PageLoader";
 
 // Lazy load = non-critical components
 const About = lazy(() => import("@/components/About"));
@@ -19,22 +19,25 @@ const CareToCommunity = lazy(() => import("@/components/CareToCommunity"));
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
-      {/* Schema is not always visible first — lazy load */}
-      <Suspense fallback={<div className="text-center py-10">Loading Schema...</div>}>
-        <Schema />
-      </Suspense>
+    <>
+      <PageLoader />
+      
+      <div className="min-h-screen">
+        {/* Schema is not always visible first — lazy load */}
+        <Suspense fallback={<div className="text-center py-10">Loading Schema...</div>}>
+          <Schema />
+        </Suspense>
 
       <Header />
 
       <main>
         <Hero />
-        
+
         <Suspense fallback={<div className="h-40 flex items-center justify-center">Loading Centers...</div>}>
           <Centers />
         </Suspense>
 
-         <Suspense fallback={<div className="h-40 flex items-center justify-center">Loading Care to Home...</div>}>
+        <Suspense fallback={<div className="h-40 flex items-center justify-center">Loading Care to Home...</div>}>
           <CareToHome />
         </Suspense>
 
@@ -67,8 +70,9 @@ const Index = () => {
         </Suspense>
       </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 };
 
